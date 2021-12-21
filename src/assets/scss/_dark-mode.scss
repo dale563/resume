@@ -8,17 +8,17 @@
         font-weight: bold;
     }
     
-    .form-switch .form-check-input {
+    .form-switch .custom-control-input {
 	    border-radius: 1em;
 	    border-color: $background;
     }
     
     
-    .form-check-input:checked {
+    .custom-control-input:checked, .custom-control-label::before {
 	    background-color: $btn-color;
 	    border-color: $btn-color;
     }
-    .form-check-input:focus {
+    .custom-control-input:focus {
 	    box-shadow: none;
 	    border-color: $background;
     }
@@ -39,7 +39,7 @@ body[data-theme="dark"] {
 	}
 	
    .dark-mode-switch {
-	   .form-check-input:focus {
+	   .custom-control-input:focus {
 		    border-color: $btn-color;
 	    }
    }

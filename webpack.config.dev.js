@@ -61,6 +61,7 @@ module.exports = {
         new HtmlWebPackPlugin({   // Peut être un fichier.js
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/index.html'),
+            bodyTags:`<script src="./assets/scripts/mustache.min.js"></script><script src="./assets/scripts/github-activity.min.js"></script>`
         }),
         new MiniCssExtractPlugin({
             linkType: 'text/css',
@@ -70,12 +71,14 @@ module.exports = {
             patterns: [
                 { from: path.resolve(__dirname, 'src/assets/images'), to: path.resolve(__dirname, 'dist/assets/images') },
                 { from: path.resolve(__dirname, 'src/favicon.ico'), to: path.resolve(__dirname, 'dist/favicon.ico') },
+                { from: path.resolve(__dirname, './node_modules/github-activity-feed/dist/github-activity.min.js'), to: path.resolve(__dirname, 'dist/assets/scripts/github-activity.min.js') },
+                { from: path.resolve(__dirname, './node_modules/mustache/mustache.min.js'), to: path.resolve(__dirname, 'dist/assets/scripts/mustache.min.js') },
             ],
           }),
         // new webpack.ProvidePlugin({
         //     $: 'jquery',
         //     jQuery: 'jquery',
-        //     'window.jQuery': 'jquery',
+        //     'window.jQuery': 'jquery'
         // }),
     ],
     
