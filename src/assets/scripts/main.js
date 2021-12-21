@@ -1,12 +1,3 @@
-import 'bootstrap';
-import '@fortawesome/fontawesome-free/js/all';
-import 'dark-mode-switch/dark-mode-switch';
-const GitHubCalendar = require('github-calendar/dist/github-calendar.min.js');
-import style from "bootstrap/scss/bootstrap.scss";
-import style2 from "../scss/styles.scss";
-import style3 from "github-activity-feed/dist/github-activity.min.css";
-import style4 from 'github-calendar/dist/github-calendar-responsive.css';
-
 "use strict";
 
 // Enable tooltips everywhere
@@ -15,8 +6,6 @@ import style4 from 'github-calendar/dist/github-calendar-responsive.css';
 //   return new bootstrap.Tooltip(tooltipTriggerEl)
 // });
 
-    /* Github Calendar - https://github.com/dale563/github-calendar */
-new GitHubCalendar("#github-graph", "dale563", { responsive: true });
 
 GitHubActivity.feed({
 	username: "dale563",
@@ -45,4 +34,4 @@ const reinitialiserFormulaire = () => {
     document.getElementById("formulaire218").reset();
 }
 
-boutonReinitialier.addEventListener('click', reinitialiserFormulaire);
+// boutonReinitialier.addEventListener('click', reinitialiserFormulaire);
