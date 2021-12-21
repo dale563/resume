@@ -1,14 +1,19 @@
 import React from 'react';
-const Education = () => {
+const Education = (props) => {
   return (
     <div className="item">
       <h3 className="title">
-        <i className="fas fa-graduation-cap"></i> AEC - Production de média
-        interactif
+        <i className="fas fa-graduation-cap"></i>
+        {props.nomFormation}
       </h3>
       <h4 className="university">
-        Cégep Limoilou<span className="year">(2020-2022)</span>
+      {props.lieuFormation}<span className="year">{props.anneesFormation}</span>
       </h4>
+      {props.dpcumentsUri != "" && (
+          <div>
+          
+          </div>
+        )}
     </div>
   );
 };
