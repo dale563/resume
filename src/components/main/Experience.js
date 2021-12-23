@@ -1,21 +1,26 @@
-import React from 'react';
-const Experience = () => {
+import React from "react";
+
+const Experience = (props) => {
   return (
     <div className="item">
       <h3 className="title">
-        Co-Founder & Lead Developer -{" "}
+        {props.poste} -{" "}
         <span className="place">
-          <a href="#">Startup Hub</a>
+          <a href={props.lient} target="_blank">
+            {props.entreprise}
+          </a>
         </span>{" "}
-        <span className="year">(2020 - Present)</span>
+        <span className="year">({props.annees})</span>
       </h3>
+      <p>{props.texte}</p>
+      {props.doc1src && 
       <p>
-        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut
-        libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
-        eros faucibus tincidunt.
+         <a href={props.doc1src} target="_blank">Lettre de Microfix</a>
+         <a href={props.doc2src} target="_blank">Lettre de CGL Micro</a>
+         <a href={props.doc1src} target="_blank">Lettre de la CSPI</a>
       </p>
+      }
+      
     </div>
   );
 };

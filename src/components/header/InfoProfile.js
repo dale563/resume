@@ -3,7 +3,7 @@ const InfoProfile = () => {
     return (
         <div className="profile-content">
             <h1 className="name">Dale Limoges</h1>
-            <h2 className="desc">Intégrateur web</h2>   
+            <h2 className="desc">Programmation et intégration web</h2>   
             <ul className="social list-inline">
                 <li className="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/dale-limoges-86435130/"><i className="fab fa-linkedin-in"></i></a></li>
                 <li className="list-inline-item"><a target="_blank" href="https://github.com/dale563"><i className="fab fa-github-alt"></i></a></li>    
