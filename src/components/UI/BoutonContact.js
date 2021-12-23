@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 const BoutonContact = () => {
   return (
     <button
       type="button"
       className="btn btn-cta-primary"
-      data-toggle="modal"
-      data-target="#modaleMeContacter"
+      data-bs-toggle="modal"
+      data-bs-target="#modaleMeContacter"
     >
       <i className="fas fa-paper-plane"></i> Me contacter
     </button>
