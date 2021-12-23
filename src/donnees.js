@@ -41,21 +41,29 @@ const resume = {
     ],
   },
 
-  projetVedette: {
-    nom: "leRempart",
-    id: 1,
-    titre: "Projet Le Rempart (chef de projet)",
-    sommaire: "Site web pour un organisme de Québec qui aide les femmes en difficulté et à risque d'itinérance.",
-    srcImageSommaire: "",
-  },
-
   projets: [
     {
+      id: 1,
+      vedette: true,
+      titre: "Projet Le Rempart (chef de projet)",
+      sommaire: "Site web pour un organisme de Québec qui aide les femmes en difficulté et à risque d'itinérance.",
+      imgSrc: imageApropos,
+      imgAlt: "test",
+      hrefLien:"https://lerempart.org",
+      nomLien:"Voir le site temporaire",
+      codeModale: "",
+      icones: [''],
+    },
+    {
       id: 2,
-      titre: "https://dl-nd.com",
+      titre: "Dale Limoges, Naturopathe",
       sommaire: "Une bonne partie de mes travaux se retrouve dans la mise à jour de mon site professionnel. De la structure, au design, en passant par le SEO et les outils de prise de rendez-vous en ligne.",
       imgSrc: imageApropos,
       imgAlt: "test",
+      hrefLien: "https://dl-nd.com",
+      nomLien: "Voir le site",
+      codeModale: "",
+      icones: [''],
     },
     {
       id: 3,
@@ -63,6 +71,10 @@ const resume = {
       sommaire: "Dans le cadre du cour de Recherche et développement, j'ai appris à utiliser de Webpack et l'ai présenté groupe",
       imgSrc: imageApropos,
       imgAlt: "test",
+      hrefLien: "#",
+      nomLien: "Voir la présentation",
+      codeModale: "",
+      icones: [''],
     },
     {
       id: 4,
@@ -70,6 +82,10 @@ const resume = {
       sommaire: "Ce travail a été fait sans framework ni librairies, il servait à tester notre compréhension du SCSS.",
       imgSrc: imageApropos,
       imgAlt: "test",
+      hrefLien: "#",
+      nomLien: "Voir le résultat",
+      codeModale: "",
+      icones: [''],
     },
   ],
 

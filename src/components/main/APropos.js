@@ -15,7 +15,7 @@ const APropos = () => {
           />
         ))}
         {resume.apropos.images.map((image) => (
-          <a key={image.id} href={image.src} target="_blank"><img key={image.id} src={image.src} className="rounded img-thumbnail" alt={image.alt}></img></a>
+          <a key={image.id} href={image.src} target="_blank"><img key={image.id} src={image.src} className="rounded img-thumbnail project-image" alt={image.alt}></img></a>
         ))}
       </>
     </Section>

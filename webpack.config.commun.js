@@ -7,7 +7,7 @@ module.exports = {
 
     entry: {
         index: path.resolve(__dirname, 'src/index.js'),
-        vendors: path.resolve(__dirname, 'src/components/vendors.js')
+        vendors: path.resolve(__dirname, 'src/assets/scripts/vendors.js')
       },
       
     output: {

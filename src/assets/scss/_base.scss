@@ -180,8 +180,8 @@ a.dotted-link {
 /* About Section */
 .about {
   img {
-      width: 30%;
-      max-width: 150px;
+    width: 30%;
+    max-width: 150px;
   }
 }
 
@@ -210,6 +210,10 @@ a.dotted-link {
       }
     }
   }
+  .sous-titre {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
   .divider {
     margin-bottom: 60px;
   }
@@ -218,7 +222,6 @@ a.dotted-link {
     .title {
       font-size: 20px;
       margin-bottom: 5px;
-      font-size: 20px;
     }
     .summary {
       margin-bottom: 30px;
