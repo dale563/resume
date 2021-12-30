@@ -5,12 +5,16 @@ import cv from "./assets/documents/LIMOGES-Dale_CV.pdf";
 import releveNoteMontmorency from "./assets/documents/LIMOGES-Dale_Releve-Note_Montmorency.pdf";
 import mesIcones from "./mesIcones";
 
-import DLNDanalyseMarche from "./assets/documents/DLND_Etude-de-marche.pdf";
-import DLNDguideGraphique from "./assets/documents/DLND_Guide-des-normes-graphiques.pdf";
-import DLNDstructureSite from "./assets/documents/DLND_Architecture-site.pdf";
+// Images et documents en lien avec Apropos ************************************************************************ 
+// Images et documents en lien avec Apropos ************************************************************************ 
+// Images et documents en lien avec Apropos ************************************************************************ 
 
 import AproposThumbnail01 from "./assets/images/Apropos-thumbnail-01.png"
 import AproposThumbnail02 from "./assets/images/Apropos-thumbnail-02.png"
+
+// Images et documents en lien avec LeRempart ************************************************************************ 
+// Images et documents en lien avec LeRempart ************************************************************************ 
+// Images et documents en lien avec LeRempart ************************************************************************ 
 
 import LeRempartImageVedette01 from "./assets/images/LeRempart-image-vedette-01.png";
 import LeRempartModale01 from "./assets/images/LeRempart-modale-01.png";
@@ -19,12 +23,20 @@ import LeRempartModale03 from "./assets/images/LeRempart-modale-03.png";
 import LeRempartModale04 from "./assets/images/LeRempart-modale-04.png";
 import LeRempartModale05 from "./assets/images/LeRempart-modale-05.png";
 
+// Images et documents en lien avec PresentationWebpack ************************************************************************ 
+// Images et documents en lien avec PresentationWebpack ************************************************************************ 
+// Images et documents en lien avec PresentationWebpack ************************************************************************ 
+
 import PresentationWebpackSommaire01 from "./assets/images/Presentation-Webpack-sommaire-01.png";
 import PresentationWebpackModale01 from "./assets/images/Presentation-Webpack-modale-01.png";
 import PresentationWebpackModale02 from "./assets/images/Presentation-Webpack-modale-02.png";
 import PresentationWebpackModale03 from "./assets/images/Presentation-Webpack-modale-03.png";
 import PresentationWebpackModale04 from "./assets/images/Presentation-Webpack-modale-04.png";
 import PresentationWebpackModale05 from "./assets/images/Presentation-Webpack-modale-05.png";
+
+// Images et documents en lien avec ReproductionLego ************************************************************************ 
+// Images et documents en lien avec ReproductionLego ************************************************************************ 
+// Images et documents en lien avec ReproductionLego ************************************************************************ 
 
 import ReproductionLegoSommaire01 from "./assets/images/Reproduction-Lego-sommaire-01.png";
 import ReproductionLegoModale01 from "./assets/images/Reproduction-Lego-modale-01.png";
@@ -33,6 +45,10 @@ import ReproductionLegoModale03 from "./assets/images/Reproduction-Lego-modale-0
 import ReproductionLegoModale04 from "./assets/images/Reproduction-Lego-modale-04.png";
 import ReproductionLegoModale05 from "./assets/images/Reproduction-Lego-modale-05.png";
 
+// Images et documents en lien avec DLND ************************************************************************ 
+// Images et documents en lien avec DLND ************************************************************************ 
+// Images et documents en lien avec DLND ************************************************************************ 
+
 import DlndSommaire01 from "./assets/images/DLND-sommaire-01.png";
 import DlndModale01 from "./assets/images/DLND-modale-01.png";
 import DlndModale02 from "./assets/images/DLND-modale-02.png";
@@ -40,7 +56,15 @@ import DlndModale03 from "./assets/images/DLND-modale-03.png";
 import DlndModale04 from "./assets/images/DLND-modale-04.png";
 import DlndModale05 from "./assets/images/DLND-modale-05.png";
 
+import DLNDanalyseMarche from "./assets/documents/DLND_Etude-de-marche.pdf";
+import DLNDguideGraphique from "./assets/documents/DLND_Guide-des-normes-graphiques.pdf";
+import DLNDstructureSite from "./assets/documents/DLND_Architecture-site.pdf";
 
+
+
+// Début du module resume ************************************************************************ 
+// Début du module resume ************************************************************************ 
+// Début du module resume ************************************************************************ 
 
 const resume = {
   apropos: {
