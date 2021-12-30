@@ -34,4 +34,4 @@ const reinitialiserFormulaire = () => {
     document.getElementById("formulaire218").reset();
 }
 
-// boutonReinitialier.addEventListener('click', reinitialiserFormulaire);
+boutonReinitialier.addEventListener('click', reinitialiserFormulaire);

@@ -14,7 +14,7 @@ const Projets = () => {
             sommaire={projet.sommaire}
             hrefLien={projet.hrefLien}
             nomLien={projet.nomLien}
-            codeModale={projet.codeModale}
+            modale={projet.modale}
             vedette={projet.vedette}
           />
         ))}

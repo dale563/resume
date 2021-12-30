@@ -1,6 +1,8 @@
 import React from "react";
+import BoutonModaleProjet from "./modale/BoutonModaleProjet";
 import ProjetImage from "./ProjetImage";
 import ProjetVedette from "./projetvedette";
+import ModaleProjet from "./modale/ModaleProjet";
 const Projet = (props) => {
   return (
     <>
@@ -12,7 +14,7 @@ const Projet = (props) => {
           imgAlt={props.imgAlt}
           hrefLien={props.hrefLien}
           nomLien={props.nomLien}
-          codeModale={props.codeModale}
+          modale={props.modale}
         />
       )}
       {!props.vedette && (
@@ -22,13 +24,16 @@ const Projet = (props) => {
           </a>
 
           <div className="desc col-md-8 col-12">
-            <h3 className="title">{props.titre}</h3>
-            <p className="mb-2">
-              {props.sommaire}
-              <a className="more-link" href={props.codeModale} target="_blank">
-                En savoir plus
-              </a>
-            </p>
+            <div className="d-flex mb-2">
+              <h3 className="title pt-3">{props.titre}</h3>
+              <BoutonModaleProjet dataBsTarget={props.modale.dataBsTarget} />
+            </div>
+            <ModaleProjet
+              htmlIdModale={props.modale.htmlIdModale}
+              header={props.modale.header}
+              sections={props.modale.sections}
+            />
+            <p className="mb-2">{props.sommaire}</p>
             <p>
               <a className="more-link" href={props.hrefLien} target="_blank">
                 <i className="fas fa-external-link-alt"></i> {props.nomLien}

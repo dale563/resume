@@ -1,6 +1,6 @@
 const Paragraphe = (props) => {
   return (
-    <p>
+    <p className={props.className}>
       {props.texte}
       {props.lien && <a href={props.lien}>{props.nomLien}</a>}
     </p>

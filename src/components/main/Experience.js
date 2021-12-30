@@ -6,7 +6,7 @@ const Experience = (props) => {
       <h3 className="title">
         {props.poste} -{" "}
         <span className="place">
-          <a href={props.lient} target="_blank">
+          <a href={props.lien} target="_blank">
             {props.entreprise}
           </a>
         </span>{" "}
