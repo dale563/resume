@@ -92,7 +92,18 @@ a.dotted-link {
         color: darken($color, 20%);
     }
 }
-        
+
+ul.liste_transparente {
+list-style-type: none;
+margin:0;
+padding:0;
+    li {
+        margin:0;
+        padding:0;
+    }
+}
+
+
 /* ======= Header ======= */
 // 
 .header {
@@ -306,6 +317,19 @@ a.dotted-link {
         
         
     }
+}
+
+/* Projets modales */ 
+.modale_section_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.modale_section_text_paragraphes {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Work Section */
@@ -598,3 +622,4 @@ a.dotted-link {
         color: $heart;
     }
 }
+

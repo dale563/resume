@@ -104,6 +104,16 @@ const mesIcones = {
       classes:"fas fa-external-link-alt",
       dataIcon:"",
     },
+    internet: {
+      id: 22,
+      classes:"iconify",
+      dataIcon:"pepicons:internet",
+    },
+    flecheVersDroite: {
+      id: 23,
+      classes:"iconify",
+      dataIcon:"entypo:arrow-right",
+    }
   };
 
   export default mesIcones;

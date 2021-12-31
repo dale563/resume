@@ -30,7 +30,7 @@ const Main = () => {
         <aside className="secondary col-lg-4 col-12">
           <Infos />
           <Competences />
-          {/* <Temoignages /> */}
+          <Temoignages />
           <Educations
             heading="Éducation"
             classesAjouteSection="education aside"

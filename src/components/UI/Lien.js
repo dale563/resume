@@ -5,7 +5,7 @@ const Lien = (props) => {
         className={props.iconeClasses}
         data-icon={props.iconeDataIcon}
       ></span>
-      {props.text}
+      {" "}{props.text}
     </a>
   );
 };

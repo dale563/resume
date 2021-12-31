@@ -3,9 +3,9 @@ import Lien from "../../../UI/Lien";
 
 const ModaleSectionText = (props) => {
   return (
-    <div className="col-12 col-lg-6">
-      <h6 className="pt-2">{props.titre}</h6>
-      <div className="p-3">
+    <div className="col-12 col-xl-6 modale_section_text">
+      {props.children}
+      <div className="p-3 modale_section_text_paragraphes">
         {props.paragraphes.map((texte) => (
           <Paragraphe
             key={texte.id}

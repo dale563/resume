@@ -4,15 +4,13 @@ const Temoignage = (props) => {
     <div className="item">
       <blockquote className="quote">
         <p>
-          <i className="fas fa-quote-left"></i>James is an excellent software
-          engineer and he is passionate about what he does. You can totally
-          count on him to deliver your projects!
+          <i className="fas fa-quote-left"></i>{props.texte}
         </p>
       </blockquote>
       <p className="source">
-        <span className="name">Tim Adams</span>
+        <span className="name">{props.auteur}</span>
         <br />
-        <span className="title">Curabitur commodo</span>
+        <span className="title">{props.titreAuteur}</span>
       </p>
     </div>
   );

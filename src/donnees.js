@@ -23,6 +23,10 @@ import LeRempartModale03 from "./assets/images/LeRempart-modale-03.png";
 import LeRempartModale04 from "./assets/images/LeRempart-modale-04.png";
 import LeRempartModale05 from "./assets/images/LeRempart-modale-05.png";
 
+const leRempartSiteWeb = "https://lerempart.org";
+const leRempartLienFigma = "https://www.figma.com/proto/H9rFVKEWWpOlB36dsC0D3U/Maquettes-haute-fid%C3%A9lit%C3%A9?page-id=0%3A1&node-id=313%3A2352&viewport=378%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=313%3A2352&show-proto-sidebar=1";
+const leRempartFormulaireDon = "https://app.simplyk.io/fr/donation-form/933a119b-e342-4d6f-bc0a-735d810c2737";
+
 // Images et documents en lien avec PresentationWebpack ************************************************************************ 
 // Images et documents en lien avec PresentationWebpack ************************************************************************ 
 // Images et documents en lien avec PresentationWebpack ************************************************************************ 
@@ -34,6 +38,10 @@ import PresentationWebpackModale03 from "./assets/images/Presentation-Webpack-mo
 import PresentationWebpackModale04 from "./assets/images/Presentation-Webpack-modale-04.png";
 import PresentationWebpackModale05 from "./assets/images/Presentation-Webpack-modale-05.png";
 
+const presentationWebPackSiteWeb = "https://rd-webpack.web.app/";
+const presentationWebPackGitHub = "https://github.com/dale563/rd-webpack";
+
+
 // Images et documents en lien avec ReproductionLego ************************************************************************ 
 // Images et documents en lien avec ReproductionLego ************************************************************************ 
 // Images et documents en lien avec ReproductionLego ************************************************************************ 
@@ -44,6 +52,9 @@ import ReproductionLegoModale02 from "./assets/images/Reproduction-Lego-modale-0
 import ReproductionLegoModale03 from "./assets/images/Reproduction-Lego-modale-03.png";
 import ReproductionLegoModale04 from "./assets/images/Reproduction-Lego-modale-04.png";
 import ReproductionLegoModale05 from "./assets/images/Reproduction-Lego-modale-05.png";
+
+const reproductionLegoSiteWeb = "https://dalelimoges-tl-rw.web.app/"
+const reproductionLegoGitHub = "https://github.com/dale563/travail-long-rw-grille-lego"
 
 // Images et documents en lien avec DLND ************************************************************************ 
 // Images et documents en lien avec DLND ************************************************************************ 
@@ -59,6 +70,8 @@ import DlndModale05 from "./assets/images/DLND-modale-05.png";
 import DLNDanalyseMarche from "./assets/documents/DLND_Etude-de-marche.pdf";
 import DLNDguideGraphique from "./assets/documents/DLND_Guide-des-normes-graphiques.pdf";
 import DLNDstructureSite from "./assets/documents/DLND_Architecture-site.pdf";
+
+const dlndSiteWeb = "https://dl-nd.com";
 
 
 
@@ -115,9 +128,22 @@ const resume = {
         "Site web pour un organisme de Québec qui aide les femmes en difficulté et à risque d'itinérance.",
       imgSrc: LeRempartImageVedette01,
       imgAlt: "Présentaiton web du Rempart, bannière rouge écrit le rempart sous un menu noir",
-      hrefLien: "https://lerempart.org",
-      nomLien: "Voir le site temporaire",
+      hrefFormulaireDon: leRempartFormulaireDon,
       icones: [mesIcones.wordpress, mesIcones.figma],
+      liens: [
+        {
+          id: 1,
+          text: "Le prototype Figma",
+          href: leRempartLienFigma,
+          icone: mesIcones.figma,
+        },
+        {
+          id: 2,
+          text: "La page web temporaire",
+          href: leRempartSiteWeb,
+          icone: mesIcones.internet,
+        },
+      ],
       modale: {
         id: 1,
         dataBsTarget: "#modaleProjetLeRempart",
@@ -298,9 +324,15 @@ const resume = {
         "Une bonne partie de mes travaux se retrouve dans la mise à jour de mon site professionnel. De la structure, au design, en passant par le SEO et les outils de prise de rendez-vous en ligne.",
       imgSrc: DlndSommaire01,
       imgAlt: "Vision globale de la page d'accueil avec le menu a gauche. Image d'un homme qui cour avec une citation a droite. Présentation des services et des questions fréquentes en dessous.",
-      hrefLien: "https://dl-nd.com",
-      nomLien: "Voir le site",
       icones: [mesIcones.wordpress, mesIcones.illustrator, mesIcones.mailchimp],
+      liens: [
+        {
+          id: 1,
+          text: "Le site web",
+          href: dlndSiteWeb,
+          icone: mesIcones.internet,
+        },
+      ],
       modale: {
         id: 1,
         dataBsTarget: "#modaleDLND",
@@ -442,9 +474,21 @@ const resume = {
         "Dans le cadre du cour de Recherche et développement, j'ai appris à utiliser de Webpack et l'ai présenté groupe",
       imgSrc: PresentationWebpackSommaire01,
       imgAlt: "Menu écrit Présentation puis Logo Webpack centré sur fond noir prenant tout l'espace disponible.",
-      hrefLien: "https://rd-webpack.web.app/",
-      nomLien: "Voir le site des présentations",
       icones: [mesIcones.webpack, mesIcones.bootstrap],
+      liens: [
+        {
+          id: 1,
+          text: "Le repository GitHub",
+          href: presentationWebPackGitHub,
+          icone: mesIcones.github,
+        },
+        {
+          id: 2,
+          text: "Le site web",
+          href: presentationWebPackSiteWeb,
+          icone: mesIcones.internet,
+        },
+      ],
       modale: {
         id: 1,
         dataBsTarget: "#modalePresentationWebpack",
@@ -607,9 +651,22 @@ const resume = {
         "Ce travail a été fait sans framework ni librairies, il servait à tester notre compréhension du SCSS.",
       imgSrc: ReproductionLegoSommaire01,
       imgAlt: "Menu mauve avec une bannière présentant un couple qui s'enlasse devant un paysage orangé et des icones en dessous.",
-      hrefLien: "https://dalelimoges-tl-rw.web.app/",
-      nomLien: "Voir le résultat",
       icones: [mesIcones.html, mesIcones.sass],
+      liens: [
+        {
+          id: 1,
+          text: "Le repository GitHub",
+          href: reproductionLegoGitHub,
+          icone: mesIcones.github,
+        },
+        {
+          id: 2,
+          text: "Le site web",
+          href: reproductionLegoSiteWeb,
+          icone: mesIcones.internet,
+        },
+      ],
+
       modale: {
         id: 1,
         dataBsTarget: "#modaleReproductionLego",

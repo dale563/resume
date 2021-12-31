@@ -1,8 +1,9 @@
 const ModaleSectionImage = (props) => {
+  const classes = props.className + " col-12 col-xl-6";
     return (
-        <div className="col-12 col-md-6">
+        <div className={classes} >
           <img
-            className="img-fluid rounded shadow-sm"
+            className="img-fluid rounded shadow-sm text-center"
             src={props.imgSrc}
             alt={props.imgAlt}
           />

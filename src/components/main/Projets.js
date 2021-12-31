@@ -12,10 +12,10 @@ const Projets = () => {
             imgAlt={projet.imgAlt}
             titre={projet.titre}
             sommaire={projet.sommaire}
-            hrefLien={projet.hrefLien}
-            nomLien={projet.nomLien}
             modale={projet.modale}
             vedette={projet.vedette}
+            liens={projet.liens}
+            hrefFormulaireDon={projet.hrefFormulaireDon}
           />
         ))}
     </Section>

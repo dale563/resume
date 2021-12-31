@@ -1,15 +1,21 @@
 import React from "react";
+
+import mesIcones from "../../../../mesIcones";
+
 const BoutonModaleProjet = (props) => {
   return (
-    <button
-      type="button"
-      className="badge badge-theme mx-2 bouton_modale_projet"
+    <a
+      href="#"
       data-bs-toggle="modal"
       data-bs-target={props.dataBsTarget}
-    >
-      Ouvrir
-    </button>
+     >
+       <span className={mesIcones.flecheVersDroite.classes} data-icon={mesIcones.flecheVersDroite.dataIcon}>
+       </span>
+       {" "}Les coulisses du projets
+    </a>
   );
 };
 
 export default BoutonModaleProjet;
+
+

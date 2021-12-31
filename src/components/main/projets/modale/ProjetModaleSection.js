@@ -14,21 +14,25 @@ const ProjetModaleSection = (props) => {
       <div className="row p-3">
         {!estPair(compteur) && (
           <>
-            <ModaleSectionImage imgSrc={props.imgSrc} imgAlt={props.imgAlt} />
+            <ModaleSectionImage imgSrc={props.imgSrc} imgAlt={props.imgAlt} className="d-none d-xl-block" />
             <ModaleSectionText
-              titre={props.titre}
               paragraphes={props.paragraphes}
               liens={props.liens}
-            />
+            >
+            <h6 className="pt-2">{props.titre}</h6>
+            </ModaleSectionText>
+            <ModaleSectionImage imgSrc={props.imgSrc} imgAlt={props.imgAlt} className="d-xl-none" />
           </>
         )}
         {estPair(compteur) && (
           <>
+            
             <ModaleSectionText
-              titre={props.titre}
               paragraphes={props.paragraphes}
               liens={props.liens}
-            />
+            >
+            <h6 className="pt-2">{props.titre}</h6>
+            </ModaleSectionText>
             <ModaleSectionImage imgSrc={props.imgSrc} imgAlt={props.imgAlt} />
           </>
         )}

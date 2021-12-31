@@ -35,7 +35,7 @@
     "dark-mode-switch": "^1.0.0",
     "github-activity-feed": "^0.3.0",
     "github-calendar": "^2.2.9",
-    "jquery": "^3.5.2",
+    "jquery": "^3.6.0",
     "mustache": "^4.2.0",
     "octicons": "^8.5.0",
     "popper.js": "^1.16.1",
