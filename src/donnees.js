@@ -100,9 +100,8 @@ const resume = {
       },
       {
         id: 5,
-        texte: `Chacun des projets démontrent différentes compétences : ma capacité à gérer un projet, mon autonomie, ma vision globale, mes compétences technique en programmation ainsi que mon “efficacité redoutable”`,
-        lien: `dl-nd.com`,
-        nomLien: "1",
+        texte: `Chacun des projets démontrent différentes compétences : ma capacité à gérer un projet, mon autonomie, ma vision globale, mes compétences technique en programmation ainsi que ma “capacité exceptionnelle à apprendre”`,
+        sourceCitation:lettreCGL,
       },
     ],
     images: [
@@ -117,6 +116,38 @@ const resume = {
         alt: "Photo de moi travaillant devant 2 écrans et une tablette de dessin",
       },
     ],
+    documents: [
+      {
+        id: 1,
+        nom: "Curriculum vitae",
+        src:cv,
+        icone:mesIcones.pdf,
+      },
+      // {
+      //   id: 2,
+      //   nom: "Lettre présentation générique",
+      //   src:cv,
+      //   icone:mesIcones.pdf,
+      // },
+      {
+        id: 3,
+        nom: "Lettre de référence d'Équipe Microfix",
+        src:lettreMicrofix,
+        icone:mesIcones.pdf,
+      },
+      {
+        id: 4,
+        nom: "Lettre de référence de la Commission Scolaire de la Pointe de l'Île",
+        src:lettreCSPI,
+        icone:mesIcones.pdf,
+      },
+      {
+        id: 5,
+        nom: "Lettre référence CGL Micro",
+        src:lettreCGL,
+        icone:mesIcones.pdf,
+      }
+    ]
   },
 
   projets: [

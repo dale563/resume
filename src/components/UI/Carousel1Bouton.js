@@ -21,25 +21,9 @@
         <button
             type="button"
             data-bs-target={props.dataBsTarget}
-            data-bs-slide-to={slideTo}
-            className=""
-            aria-current="false"       
+            data-bs-slide-to={slideTo}      
             aria-label={ariaLabel}
           ></button>}
-          {/* {slideTo === 0 ?
-            <li
-            data-bs-target={props.dataBsTarget}
-            data-bs-slide-to={slideTo}
-            className="active"      
-            aria-label={ariaLabel}
-          ></li>
-        :
-        <li
-            data-bs-target={props.dataBsTarget}
-            data-bs-slide-to={slideTo}
-            className=""     
-            aria-label={ariaLabel}
-          ></li>} */}
         </>
 
     )

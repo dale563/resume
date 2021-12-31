@@ -10,8 +10,7 @@ const APropos = () => {
           <Paragraphe
             key={texte.id}
             texte={texte.texte}
-            lien={texte.lien}
-            nomLien={texte.nomLien}
+            sourceCitation={texte.sourceCitation}
           />
         ))}
         {resume.apropos.images.map((image) => (

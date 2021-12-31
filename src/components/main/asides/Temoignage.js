@@ -4,7 +4,7 @@ const Temoignage = (props) => {
     <div className="item">
       <blockquote className="quote">
         <p>
-          <i className="fas fa-quote-left"></i>{props.texte}
+          <i className="fas fa-quote-left"></i>{props.texte}<sup><a href={props.source} target="_blank">{" "}source</a></sup>
         </p>
       </blockquote>
       <p className="source">
