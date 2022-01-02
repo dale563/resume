@@ -8,6 +8,7 @@ import GitHub from "./GitHub";
 
 import Infos from "./asides/Infos";
 import Competences from "./asides/Competences";
+import Qualites from "./asides/CompetencesSofts";
 import Temoignages from "./asides/Temoignages";
 import Educations from "./asides/Educations";
 import Langues from "./asides/Langues";
@@ -22,21 +23,24 @@ const Main = () => {
           <Projets />
           <Accomplissements />
           <Experiences
-            heading="Éxpérience de travail"
+            heading="Expérience de travail"
             classesAjouteSection="experience"
           />
           <GitHub />
         </div>
+
         <aside className="secondary col-lg-4 col-12">
-          <Infos />
-          <Competences />
+        <Infos />
           <Temoignages />
+          <Competences />
+          <Qualites />
+          
           <Educations
             heading="Éducation"
             classesAjouteSection="education aside"
           />
           <Langues heading="Langues" classesAjouteSection="languages aside" />
-
+          
           <Credits
             heading="Crédits"
             classesAjouteSection="credits aside"

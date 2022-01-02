@@ -1,19 +1,19 @@
 import Section from "../../UI/Section";
 import Competence from "./Competence";
 import resume from "../../../donnees";
-const Competences = () => {
+const Qualites = () => {
   return (
     <Section
       className="skills aside"
-      classNameHeader="sr-only"
-      heading="Compétences"
+      // classNameHeader="sr-only"
+      heading="Qualités"
     >
-      <p className="intro">
-      Mon intérêt est marqué pour le développement front-end. J'apprécie particulièrement le Sass, Bootstrap, React, Git et Webpack.
-      </p>
+      {/* <p className="intro">
+      J'aime bien aimé gérer des projets. Je suis aussi habituer à du travail de bout en bout.
+      </p> */}
 
       <div className="skillset">
-      {resume.competences.map((competence) => (
+      {resume.qualites.map((competence) => (
           <Competence
             key={competence.id}
             nom={competence.nom}
@@ -27,4 +27,4 @@ const Competences = () => {
   );
 };
 
-export default Competences;
+export default Qualites;

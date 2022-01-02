@@ -15,8 +15,8 @@ const Experience = (props) => {
       <p>{props.texte}</p>
       {props.doc1src && 
       <p>
-         <a href={props.doc1src} target="_blank">Lettre de Microfix</a>
-         <a href={props.doc2src} target="_blank">Lettre de CGL Micro</a>
+         <a href={props.doc1src} target="_blank">Lettre de Microfix,</a>{" "}
+         <a href={props.doc2src} target="_blank">Lettre de CGL Micro,</a>{" "}
          <a href={props.doc1src} target="_blank">Lettre de la CSPI</a>
       </p>
       }

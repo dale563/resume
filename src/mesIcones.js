@@ -4,11 +4,12 @@ const mesIcones = {
       classes:"iconify",
       dataIcon:"logos:wordpress-icon",
     },
-    figma: {
-      id: 2,
-      classes:"iconify",
-      dataIcon:"logos:figma",
-    },
+    // figma: {
+    //   id: 2,
+    //   classes:"fab fa-figma",
+    //   dataIcon:"",
+    // },
+
     react: {
       id: 3,
       classes:"iconify",
@@ -36,8 +37,8 @@ const mesIcones = {
     },
     github: {
       id: 8,
-      classes:"iconify",
-      dataIcon:"logos:github-icon",
+      classes:"fab fa-github",
+      dataIcon:"",
     },
     html: {
       id: 9,
@@ -113,7 +114,23 @@ const mesIcones = {
       id: 23,
       classes:"iconify",
       dataIcon:"entypo:arrow-right",
+    },
+    figma: {
+      id: 24,
+      classes:"iconify",
+      dataIcon:"logos:figma",
+    },
+    telephone: {
+      id: 25,
+      classes:"iconify",
+      dataIcon:"logos:figma",
+    },
+    courriel: {
+      id: 26,
+      classes:"iconify",
+      dataIcon:"logos:figma",
     }
+
   };
 
   export default mesIcones;

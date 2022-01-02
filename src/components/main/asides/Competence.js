@@ -1,16 +1,20 @@
 import React from 'react';
-const Competence = () => {
+
+const Competence = (props) => {
+  const valeurNiveau = props.pourcentage
+  const pourcentageNiveau = valeurNiveau + "%";
+
   return (
     <div className="item">
       <h3 className="level-title">
-        Python &amp; Django
+        {props.nom}
         <span
           className="level-label"
           data-bs-toggle="tooltip"
           data-bs-placement="left"
-          title="You can use the tooltip to explain more about your skill level..."
+          title={props.tooltip}
         >
-          <i className="fas fa-info-circle"></i>Expert
+          <i className="fas fa-info-circle"></i>{props.niveau}
         </span>
       </h3>
 
@@ -18,10 +22,10 @@ const Competence = () => {
         <div
           className="progress-bar level-bar-inner"
           role="progressbar"
-          style={{width: "96%"}}
-          aria-valuenow="96"
+          style={{width: pourcentageNiveau}}
+          aria-valuenow={valeurNiveau}
           aria-valuemin="0"
-          aria-valuemax="96"
+          aria-valuemax={valeurNiveau}
         ></div>
       </div>
     </div>

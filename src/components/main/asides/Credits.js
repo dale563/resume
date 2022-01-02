@@ -44,6 +44,16 @@ const Credits = (props) => {
             <i className="fas fa-external-link-alt"></i>Bootstrap
           </a>
         </li>
+        <li>
+          <a href="https://webpack.js.org/" target="_blank">
+            <i className="fas fa-external-link-alt"></i>Webpack
+          </a>
+        </li>
+        <li>
+          <a href="https://fr.reactjs.org/" target="_blank">
+            <i className="fas fa-external-link-alt"></i>React
+          </a>
+        </li>
       </ul>
     </Section>
   );

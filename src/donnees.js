@@ -109,11 +109,13 @@ const resume = {
         id: 1,
         src: AproposThumbnail01,
         alt: "Photo de moi travaillant devant 3 écrans",
+      figCaption: "Mon bureau de travail à l'étage.",
       },
       {
         id: 2,
         src: AproposThumbnail02,
         alt: "Photo de moi travaillant devant 2 écrans et une tablette de dessin",
+        figCaption:"Mon bureau de travail au rez-de-chaussé.",
       },
     ],
     documents: [
@@ -156,9 +158,10 @@ const resume = {
       vedette: true,
       titre: "Projet Le Rempart (chef de projet)",
       sommaire:
-        "Site web pour un organisme de Québec qui aide les femmes en difficulté et à risque d'itinérance.",
+        `Projet synthèse pour l'AEC en production de média interactif. Mon rôle dans le projet est d'abord de m'assurer du bon fonctionnement de l'équipe, 
+         de la satisfaction de la cliente ainsi que du bon déroulement du projet. Ce sont donc mes compétences pour communiquer, orchestrer, gérer et anticiper le travail qui y ont été importantes.`,
       imgSrc: LeRempartImageVedette01,
-      imgAlt: "Présentaiton web du Rempart, bannière rouge écrit le rempart sous un menu noir",
+      imgAlt: "Présentation web du Rempart, bannière rouge écrit le rempart sous un menu noir",
       hrefFormulaireDon: leRempartFormulaireDon,
       icones: [mesIcones.wordpress, mesIcones.figma],
       liens: [
@@ -208,12 +211,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -240,12 +243,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -276,12 +279,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -309,12 +312,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -337,12 +340,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
         ],
@@ -386,12 +389,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -487,12 +490,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
         ],
@@ -547,12 +550,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -579,12 +582,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -608,12 +611,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -636,12 +639,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -664,12 +667,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
         ],
@@ -677,7 +680,7 @@ const resume = {
     },
     {
       id: 4,
-      titre: "Reproduction de l'Affichage de Lego",
+      titre: "Reproduction de l'affichage de LEGO",
       sommaire:
         "Ce travail a été fait sans framework ni librairies, il servait à tester notre compréhension du SCSS.",
       imgSrc: ReproductionLegoSommaire01,
@@ -702,7 +705,7 @@ const resume = {
         id: 1,
         dataBsTarget: "#modaleReproductionLego",
         htmlIdModale: "modaleReproductionLego",
-        header: "Reproduction de l'Affichage de Lego",
+        header: "Reproduction de l'affichage de LEGO",
         sections: [
           {
             id: 1,
@@ -720,12 +723,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -740,12 +743,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -764,12 +767,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -788,12 +791,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
           {
@@ -817,12 +820,12 @@ const resume = {
               },
             ],
             liens: [
-              {
-                id: 1,
-                text: "test",
-                href: "https://lerempart.org",
-                icone: mesIcones.lienExt,
-              },
+              // {
+              //   id: 1,
+              //   text: "test",
+              //   href: "https://lerempart.org",
+              //   icone: mesIcones.lienExt,
+              // },
             ],
           },
         ],
@@ -885,7 +888,7 @@ const resume = {
   langues: [
     {
       id: 1,
-      nom: "Francais",
+      nom: "Français",
       niveau: 5,
       commentaire: "Langue de naissance",
     },
@@ -893,7 +896,7 @@ const resume = {
       id: 2,
       nom: "Anglais",
       niveau: 4,
-      commentaire: "Professionnel avancé",
+      commentaire: "Professionnel",
     },
     {
       id: 3,
@@ -931,66 +934,108 @@ const resume = {
   competences: [
     {
       id:1,
-      compentence:`HTML/CSS/Sass/Javascript/VS Code`,
+      nom:`HTML, CSS et Sass`,
       niveau:`Expert`,
-      tooltip:`Il s'agit de la base de la formation que j'ai suivi. Bien que certains concepts Javascript m'échappent encore, son fonctionnement et sa logique est très claire d'autant avec l'utilisation de React et de Webpack dans mes derniers projets.`,
-      pourcentage:100,
+      tooltip:`Il s'agit de la base de la formation que j'ai suivi avec javascript.`,
+      pourcentage:95,
+    },
+    {
+      id:7,
+      nom:`Javascript et jQuery`,
+      niveau:`Avancé`,
+      tooltip:`Il s'agit d'une part importante de la formation que j'ai suivi. Bien que certains concepts Javascript m'échappent encore, son fonctionnement et sa logique est très claire d'autant avec l'utilisation de React et de Webpack dans mes derniers projets.`,
+      pourcentage:85,
     },
     {
       id:2,
-      compentence:`Wordpress/Bootstrap/jQuery/Velocity.js`,
+      nom:`Wordpress et Bootstrap`,
       niveau:`Avancé`,
-      tooltip:`Ce sont les frameworks et les librairies que j'ai le plus utilisés jusqu'à maintenant. Sans connaitre les `,
+      tooltip:`Ce sont les frameworks et les librairies que j'ai le plus utilisés jusqu'à maintenant.`,
       pourcentage:80,
     },
     {
       id:3,
-      compentence:`Gulp/Git/GitHub`,
+      nom:`Git et GitHub`,
       niveau:`Intermédiaire`,
-      tooltip:`Ce sont des outils que nous avons utilisés tout au long de la formation. Je suis efficient avec Git et GitHub pour la gestions des branches sans toutefois connaître l'étendu de ses fonctionnalités.`,
+      tooltip:`Je suis efficient avec Git et GitHub pour la gestions des branches sans toutefois connaître l'étendu de ses fonctionnalités.`,
       pourcentage:80,
     },
     {
       id:4,
-      compentence:`Webpack`,
+      nom:`Gulp et Webpack`,
       niveau:`Intermédiaire`,
-      tooltip:`Je le maîtrise assez bien pour l'utiliser dans mes projets. J'en ai expliqué le fonctionnement de base dans une présentation. Je devrais élaboré des configurations plus poussées dans les prochaines semaines pour une seconde présentation.`,
-      pourcentage:50,
-    },
-    {
-      id:5,
-      compentence:`React`,
-      niveau:`Intermédiaire`,
-      tooltip:`Le présent site est construit avec React. Je maîtrise assez bien la structure et l'utilisation des "props". Par contre, je n'ai pas encore utilisé les "hooks" ni les événements en dehors du "portal" pour le formulaire de contact.`,
-      pourcentage:50,
+      tooltip:`Je les maîtrise assez bien pour les utiliser dans mes projets. J'ai expliqué le fonctionnement de base de Webpack dans une présentation. Je devrais élaboré des configurations plus poussées dans les prochaines semaines pour une seconde présentation.`,
+      pourcentage:70,
     },
     {
       id:6,
-      compentence:`PHP/MySQL`,
+      nom:`PHP et MySQL`,
       niveau:`Intermédiaire`,
       tooltip:`J'ai appris le fonctionnement de PHP et de MySQL et j'ai des notes à cet effet. Ils sont l'objet d'un cour que je suis présentement.`,
-      pourcentage:40,
+      pourcentage:70,
+    },
+    {
+      id:5,
+      nom:`React`,
+      niveau:`Intermédiaire`,
+      tooltip:`Le présent site est construit avec React. Je maîtrise assez bien la structure et l'utilisation des "props". Par contre, je n'ai pas encore utilisé les "hooks" ni les événements en dehors du "portal" pour le formulaire de contact.`,
+      pourcentage:50,
     }
+
+  ],
+  qualites: [
+    {
+      id:1,
+      nom:`Autonomie`,
+      niveau:`Expert`,
+      tooltip:`C'est l'une de mes forces bien reconnues.`,
+      pourcentage:100,
+    },
+    {
+      id:2,
+      nom:`Communication`,
+      niveau:`Expert`,
+      tooltip:`J'ai fait plusieurs formations en communication notamment en communication non-violente. C'est un dada personnel très utile pour vivre de belle relation familiale et professionnelle. C'est un domaine qui me passionne.`,
+      pourcentage:95,
+    },
+    {
+      id:3,
+      nom:`Analyse`,
+      niveau:`Expert`,
+      tooltip:`Avec la résolution de problème l'analyse fait partie de ma vie dans tous les domaines afin d'arriver à l'effort minimal nécessaire et pour optimiser mes efforts.`,
+      pourcentage:95,
+    },
+    {
+      id:4,
+      nom:`Gestion de projet`,
+      niveau:`Intermédiaire`,
+      tooltip:`Les qualités précédentes m'ont amenés naturellement à gérer de façon fortuite des projets et orchestrer des efforts d'équipe.`,
+      pourcentage:50,
+    },
+
   ],
 
   temoignages: [
     {
       id:1,
-      texte:`Je puis témoigner de sa remarquable compétence, de sa capacité d’adaptation et de la qualité de ses rapports avec les clients.[...] Il représente un atout certain pour toute organisation.`,
+      texte:`Je puis témoigner de sa remarquable compétence, de sa capacité d’adaptation et de la qualité de ses rapports avec les clients.[...] 
+             Il représente un atout certain pour toute organisation.`,
       auteur:`René Blanchette`,
       titreAuteur:`Régisseur CSSPI`,
       source:lettreCSPI,
     },
     {
       id:2,
-      texte:`Il est d'une autonomie redoutable et nous n'hésitions pas à lui confier des mandants plus complexes en sachant qu'il mènerait à bon port notre client.`,
+      texte:`Il est d'une autonomie redoutable et nous n'hésitions pas à lui confier des mandants plus complexes en sachant qu'il mènerait à bon port notre client. 
+             `,
       auteur:`David Aubry`,
       titreAuteur:`Co-propriétaire de CGL Micro inc.`,
       source:lettreCGL,
     },
     {
       id:3,
-      texte:`[...], Monsieur Limoges a démontré de remarquables compétences techniques, notamment dans ses interactions avec la clientèle.[...] il représente un atout appréciable pour toute organisation.`,
+      texte:`[...], Monsieur Limoges a démontré de remarquables compétences techniques, notamment dans ses interactions avec la clientèle.[...] il représente un atout 
+             appréciable pour toute organisation.`,
       auteur:`Mathieu Jacques`,
       titreAuteur:`Président, Équipe Microfix`,
       source:lettreMicrofix,

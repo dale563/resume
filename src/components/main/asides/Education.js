@@ -7,7 +7,7 @@ const Education = (props) => {
         {props.nomFormation}
       </h3>
       <h4 className="university">
-      {props.lieuFormation}<span className="year">{props.anneesFormation}</span>
+      {props.lieuFormation}{" "}<span className="year">({props.anneesFormation})</span>
       </h4>
       {props.dpcumentsUri != "" && (
           <div>

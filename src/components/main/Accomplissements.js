@@ -4,7 +4,7 @@ import resume from "../../donnees";
 
 const Accomplissements = () => {
   return (
-    <Section className="projects" heading="Autres accomplissement">
+    <Section className="projects" heading="Autres accomplissements">
       {resume.accomplissements.map((accomplissement) => (
           <Accomplissement
             key={accomplissement.id}
