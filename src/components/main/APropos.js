@@ -1,6 +1,7 @@
 import Section from "../UI/Section";
 import resume from "../../donnees";
 import Paragraphe from "../UI/Paragraphe";
+import Lien from "../UI/Lien";
 
 const APropos = () => {
   return (
@@ -13,6 +14,20 @@ const APropos = () => {
             sourceCitation={texte.sourceCitation}
           />
         ))}
+        <ul className="liste_transparente">
+        {resume.apropos.liens &&
+                resume.apropos.liens.map((lien) => (
+                  <li key={lien.id}>
+                    <Lien
+                      key={lien.id}
+                      text={lien.text}
+                      href={lien.href}
+                      iconeClasses={lien.icone.classes}
+                      iconeDataIcon={lien.icone.dataIcon}
+                    />
+                  </li>
+                ))}
+                </ul>
         <div className="row mt-4 mb-0 pb-0">
           {resume.apropos.images.map((image) => (
             <div key={image.id} className="col col-md-5 mb-0 pb-0">

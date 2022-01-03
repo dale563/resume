@@ -22,6 +22,7 @@ import LeRempartModale02 from "./assets/images/LeRempart-modale-02.png";
 import LeRempartModale03 from "./assets/images/LeRempart-modale-03.png";
 import LeRempartModale04 from "./assets/images/LeRempart-modale-04.png";
 import LeRempartModale05 from "./assets/images/LeRempart-modale-05.png";
+import LeRempartPresentation from "./assets/documents/LeRempart_Presentation-fin-session-1ere-partie.pdf"
 
 const leRempartSiteWeb = "https://lerempart.org";
 const leRempartLienFigma = "https://www.figma.com/proto/H9rFVKEWWpOlB36dsC0D3U/Maquettes-haute-fid%C3%A9lit%C3%A9?page-id=0%3A1&node-id=313%3A2352&viewport=378%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=313%3A2352&show-proto-sidebar=1";
@@ -118,11 +119,11 @@ const resume = {
         figCaption:"Mon bureau de travail au rez-de-chaussé.",
       },
     ],
-    documents: [
+    liens: [
       {
         id: 1,
-        nom: "Curriculum vitae",
-        src:cv,
+        text: "Curriculum vitae",
+        href:cv,
         icone:mesIcones.pdf,
       },
       // {
@@ -133,20 +134,20 @@ const resume = {
       // },
       {
         id: 3,
-        nom: "Lettre de référence d'Équipe Microfix",
-        src:lettreMicrofix,
+        text: "Lettre de référence d'Équipe Microfix",
+        href:lettreMicrofix,
         icone:mesIcones.pdf,
       },
       {
         id: 4,
-        nom: "Lettre de référence de la Commission Scolaire de la Pointe de l'Île",
-        src:lettreCSPI,
+        text: "Lettre de référence de la Commission Scolaire de la Pointe de l'Île",
+        href:lettreCSPI,
         icone:mesIcones.pdf,
       },
       {
         id: 5,
-        nom: "Lettre référence CGL Micro",
-        src:lettreCGL,
+        text: "Lettre référence CGL Micro",
+        href:lettreCGL,
         icone:mesIcones.pdf,
       }
     ]
@@ -211,12 +212,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Site web temporaire",
+                href: leRempartSiteWeb,
+                icone: mesIcones.internet,
+              },
             ],
           },
           {
@@ -243,12 +244,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Présentation de fin de session",
+                href: LeRempartPresentation,
+                icone: mesIcones.pdf,
+              },
             ],
           },
           {
@@ -312,12 +313,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Maquette Figma",
+                href: leRempartLienFigma,
+                icone: mesIcones.figma,
+              },
             ],
           },
           {
@@ -442,14 +443,14 @@ const resume = {
                 id: 1,
                 text: "Guide de norme graphique",
                 href: DLNDguideGraphique,
-                icone: mesIcones.lienExt,
+                icone: mesIcones.pdf,
               },
             ],
           },
           {
             id: 4,
             titre: "Résultat",
-            imgSrc: DlndModale04,
+            imgSrc: DlndModale05,
             imgAlt: "Téléphone portable avec l'application vendue ouverte devant un meuble plein de produits de santé naturels. Écrit Soutien rapide avec confirmation visuel de ma disponibilité",
             paragraphes: [
               {
@@ -460,44 +461,56 @@ const resume = {
                 id: 2,
                 texte: `Entre deux sessions, j’ai mis mon nouveau site en ligne.`,
               },
+              {
+                id: 3,
+                texte: `J’ai compris l’importance des différentes étapes et comment l’ensemble interagit.`,
+              },
+              {
+                id: 4,
+                texte: `Cela me permet de mieux apprécier là valeur du design et des règles d’ergonomie et d’être en mesure de les évaluer objectivement.`,
+              },
+              {
+                id: 5,
+                texte: `J’ai aussi appris, que le design me demande beaucoup plus d’effort et pour des résultats moindres que les autres éléments couverts dans la formation.`,
+              },
             ],
             liens: [
               {
                 id: 1,
                 text: "https://dl-nd.com",
                 href: "https://dl-nd.com",
-                icone: mesIcones.lienExt,
+                icone: mesIcones.internet,
               },
             ],
           },
-          {
-            id: 5,
-            titre: "Conclusion",
-            imgSrc: DlndModale05,
-            imgAlt: "Vision globale de la page d'accueil avec le menu a gauche. Image d'un homme qui cour avec une citation a droite. Présentation des services et des questions fréquentes en dessous. Et finalement des témoignages",
-            paragraphes: [
-              {
-                id: 1,
-                texte: `J’ai compris l’importance des différentes étapes et comment l’ensemble interagit.`,
-              },
-              {
-                id: 2,
-                texte: `Cela me permet de mieux apprécier là valeur du design et des règles d’ergonomie et d’être en mesure de les évaluer objectivement.`,
-              },
-              {
-                id: 3,
-                texte: `J’ai aussi appris, que le design me demande beaucoup plus d’effort et pour des résultats moindres que les autres éléments couverts dans la formation.`,
-              },
-            ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
-            ],
-          },
+          // {
+          //   id: 5,
+          //   titre: "Conclusion",
+          //   imgSrc: DlndModale05,
+          //   imgAlt: "Vision globale de la page d'accueil avec le menu a gauche. Image d'un homme qui cour avec une citation a droite. Présentation des services et des questions fréquentes en dessous. Et finalement des témoignages",
+          //   paragraphes: [
+          //     {
+          //       id: 1,
+          //       texte: `J’ai compris l’importance des différentes étapes et comment l’ensemble interagit.`,
+          //     },
+          //     {
+          //       id: 2,
+          //       texte: `Cela me permet de mieux apprécier là valeur du design et des règles d’ergonomie et d’être en mesure de les évaluer objectivement.`,
+          //     },
+          //     {
+          //       id: 3,
+          //       texte: `J’ai aussi appris, que le design me demande beaucoup plus d’effort et pour des résultats moindres que les autres éléments couverts dans la formation.`,
+          //     },
+          //   ],
+          //   liens: [
+          //     // {
+          //     //   id: 1,
+          //     //   text: "test",
+          //     //   href: "https://lerempart.org",
+          //     //   icone: mesIcones.lienExt,
+          //     // },
+          //   ],
+          // },
         ],
       },
     },
@@ -611,12 +624,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Repository GitHub",
+                href: presentationWebPackGitHub,
+                icone: mesIcones.github,
+              },
             ],
           },
           {
@@ -639,12 +652,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Présentation Webpack",
+                href: presentationWebPackSiteWeb,
+                icone: mesIcones.internet,
+              },
             ],
           },
           {
@@ -722,14 +735,6 @@ const resume = {
                 texte: `Ce projet démontre mes capacités avec Sass, il a été réalisé uniquement avec du HTML et du Sass.`,
               },
             ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
-            ],
           },
           {
             id: 2,
@@ -741,14 +746,6 @@ const resume = {
                 id: 1,
                 texte: `La première étape à été de créer des maquettes mobiles et desktops. Dans un second temps préparer chacune des images.`,
               },
-            ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
             ],
           },
           {
@@ -765,14 +762,6 @@ const resume = {
                 id: 2,
                 texte: `Je me suis amusé à ne pas faire de classe et d’utiliser uniquement les balise HTML. Bien que ce ne soit pas une pratique idéale.`,
               },
-            ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
             ],
           },
           {
@@ -791,12 +780,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Repository Git",
+                href: reproductionLegoGitHub,
+                icone: mesIcones.github,
+              },
             ],
           },
           {
@@ -820,12 +809,12 @@ const resume = {
               },
             ],
             liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
+              {
+                id: 1,
+                text: "Site web",
+                href: reproductionLegoSiteWeb,
+                icone: mesIcones.internet,
+              },
             ],
           },
         ],
