@@ -92,8 +92,20 @@ a.dotted-link {
         color: darken($color, 20%);
     }
 }
-        
+
+ul.liste_transparente {
+list-style-type: none;
+margin:0;
+padding:0;
+    li {
+        margin:0;
+        padding:0;
+    }
+}
+
+
 /* ======= Header ======= */
+// 
 .header {
     padding: 30px 0;
     background: $smoky-white;
@@ -177,6 +189,26 @@ a.dotted-link {
 
 /* Latest Section */
 .latest {
+    .btn-don-rempart {
+        display: inline-block;
+        background: radial-gradient(#a721c9, #5b1861);
+        border-radius: 50px;
+        color: #fff;
+        font-weight: normal;
+        padding: 10px 40px;
+        cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 1px;
+        border: none;
+        box-sizing: content-box;
+        margin: 5px 10px 20px auto;
+        text-decoration: none;
+        &:hover{
+            transition: none;
+            background: black;
+            color:white;
+        }
+    }
     .item {
         margin-bottom: 30px;
         .title {
@@ -205,7 +237,7 @@ a.dotted-link {
         margin-bottom: 60px;
     }
     .featured {
-        margin-bottom: 60px;
+        margin-bottom: 0px;
         .title {
             font-size: 20px;
             margin-bottom: 5px;
@@ -271,6 +303,20 @@ a.dotted-link {
         }
     }
 }
+.bouton_modale_projet {
+    align-self: center;
+    border-radius: 5px;
+    border-color: lighten($color-2, 10%);
+    &:hover{
+        background-color:  darken($color-2, 10%);    
+        border-color: $color-2;
+       }
+}
+// .modale_projet {
+//     h5.titre, .times_modale {
+//         font-size:20px;
+//     }
+// }
 
 /* Projects Section */
 .projects {
@@ -291,6 +337,19 @@ a.dotted-link {
         
         
     }
+}
+
+/* Projets modales */ 
+.modale_section_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.modale_section_text_paragraphes {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Work Section */
@@ -406,6 +465,17 @@ a.dotted-link {
 
 /* Testimonials section */
 .testimonials {
+    .carousel-indicators {
+        justify-content: flex-end;
+        margin-right:0;
+        margin-bottom: 0;
+        button {
+            
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+        }
+    }
     .item {
         margin-bottom: 30px;
         &:last-child {
@@ -583,3 +653,4 @@ a.dotted-link {
         color: $heart;
     }
 }
+
