@@ -44,6 +44,7 @@ const Modale = (props) => {
                   value="Réinitialiser"
                 />
                 <input
+                id="btn_envoyer_formulaire_contact"
                   className="btn btn-success"
                   type="submit"
                   form="formulaireContact"

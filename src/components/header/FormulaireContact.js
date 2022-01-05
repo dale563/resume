@@ -9,13 +9,14 @@ const FormulaireContact = () => {
       noValidate
     >
       <div className="row">
-        <div className="col-12 form-floating mb-3">
-          <label className="ps-4" htmlFor="prenomflottant">
-            Nom
+        <div className="col-lg-6 mb-3">
+          <label  htmlFor="contact-nom">
+            Nom*
           </label>
           <input
-            id="prenomflottant"
-            placeholder="Nom"
+            name="nom"
+            id="contact-nom"
+            placeholder="Votre nom"
             type="text"
             className="form-control"
             required
@@ -23,14 +24,29 @@ const FormulaireContact = () => {
           <div className="invalid-feedback">Veuillez écrire votre nom.</div>
           <div className="valid-feedback">Merci !</div>
         </div>
-        <div className="col-12 form-floating mb-3">
-          <label className="ps-4" htmlFor="prenomflottant">
-            Adresse courriel.
+
+        <div className="col-lg-6 mb-3">
+          <label  htmlFor="contact-numero-telephone">
+            Numéro de téléphone
           </label>
           <input
-            id="courrielflottant"
-            placeholder="Adresse courriel"
-            type="text"
+            name="telephone"
+            className="form-control"
+            id="contact-numero-telephone"
+            placeholder="333-444-5555"
+            type="tel"
+          />
+        </div>
+
+        <div className="col-12 mb-3">
+          <label  htmlFor="contact-courriel">
+            Adresse courriel*
+          </label>
+          <input
+            name="courriel"
+            id="contact-courriel"
+            placeholder="adresse@domaine.abc"
+            type="email"
             className="form-control"
             required
           />
@@ -40,42 +56,37 @@ const FormulaireContact = () => {
           <div className="valid-feedback">Merci !</div>
         </div>
 
-        <div className="col-12">
-          <label className="ps-4" htmlFor="numero-telephone-flottant">
-            Numéro de téléphone
-          </label>
-          <input
-            className="form-control"
-            id="numero-telephone-flottant"
-            placeholder="Numéro de téléphone"
-            type="text"
-          />
-        </div>
-
-        <div className="col-12 form-floating mb-3">
-          <label className="ps-4" htmlFor="sujet-flottant">
+        <div className="col-12 mb-3">
+          <label  htmlFor="contact-sujet">
             Sujet
           </label>
           <input
-            id="sujet-flottant"
+            name="sujet"
+            id="contact-sujet"
             placeholder="Sujet du message"
             type="text"
             className="form-control"
-            required
           />
           <div className="invalid-feedback">Veuillez écrire votre sujet.</div>
           <div className="valid-feedback">Merci !</div>
         </div>
-        <div className="col-12">
-          <label className="ps-4" htmlFor="exempleMessage">
-            Message
+        <div className="col-12 mb-3">
+          <label  htmlFor="contact-message">
+            Message*
           </label>
           <textarea
+            name="message"
             className="form-control"
-            id="exempleMessage"
-            placeholder="Message"
+            id="contact-message"
+            placeholder="Votre message"
             rows="10"
+            required
           ></textarea>
+          <div className="invalid-feedback">Veuillez écrire votre message.</div>
+          <div className="valid-feedback">Merci !</div>
+        </div>
+        <div>
+          <small>* Champs obligatoires</small>
         </div>
       </div>
     </form>

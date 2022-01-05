@@ -13,8 +13,8 @@ const Header = () => {
                             <InfoProfile/>
                         </div>
                         <div className="col-12 col-md-auto">
-                            {/* <BoutonContact/> */}
-                            {/* <ModaleContact/> */}
+                            <BoutonContact/>
+                            <ModaleContact/>
                             <DarkModeSwitch/>
                             
                         </div>

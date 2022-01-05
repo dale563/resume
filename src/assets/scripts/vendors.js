@@ -9,5 +9,12 @@ import style3 from "github-activity-feed/dist/github-activity.min.css";
 import style4 from 'github-calendar/dist/github-calendar-responsive.css';
 import style5 from 'octicons/build/build.css';
 
-    /* Github Calendar - https://github.com/dale563/github-calendar */
-new GitHubCalendar("#github-graph", "dale563", { responsive: true });
+  /* Github Calendar - https://github.com/dale563/github-calendar */
+  new GitHubCalendar("#github-graph", "dale563", { responsive: true });
+
+
+  
+  
+  
+  
+  
