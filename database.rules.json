@@ -1,0 +1,8 @@
+{
+  "rules": {
+    ".read": false,
+    "dliw-formulaire-contact":{
+    ".write": true
+      }
+  }
+}

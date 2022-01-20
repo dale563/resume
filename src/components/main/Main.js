@@ -13,6 +13,7 @@ import Temoignages from "./asides/Temoignages";
 import Educations from "./asides/Educations";
 import Langues from "./asides/Langues";
 import Credits from "./asides/Credits";
+import TechnologiesUtilisees from "./asides/TechnologiesUtilisees";
 
 const Main = () => {
   return (
@@ -30,21 +31,22 @@ const Main = () => {
         </div>
 
         <aside className="secondary col-lg-4 col-12">
-        <Infos />
+          <Infos />
           <Temoignages />
+          <TechnologiesUtilisees  heading="Technologies utilisées" />
           <Competences />
           <Qualites />
-          
+
           <Educations
             heading="Éducation"
             classesAjouteSection="education aside"
           />
           <Langues heading="Langues" classesAjouteSection="languages aside" />
-          
+
           <Credits
             heading="Crédits"
             classesAjouteSection="credits aside"
-            classNameHeader="sr-only"
+            // classNameHeader="sr-only"
           />
         </aside>
       </div>

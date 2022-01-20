@@ -21,12 +21,25 @@ const Projet = (props) => {
 
       {!props.vedette && (
         <div className="item row pb-2">
-          <a className="col-md-4 col-12" href={props.imageSrc} target="_blank">
-            <ProjetImage imgSrc={props.imgSrc} imgAlt={props.imgAlt} />
-          </a>
+          <a
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target={props.modale.dataBsTarget}
+          className="col-md-4 col-12"
+        >
+          <ProjetImage imgSrc={props.imgSrc} imgAlt={props.imgAlt} />
+        </a>
+            
+          
 
           <div className="desc col-md-8 col-12">
-            <h3 className="title">{props.titre}</h3>
+          <a
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target={props.modale.dataBsTarget}
+        >
+          <h3 className="title mb-3">{props.titre}</h3>
+        </a>
 
             <p>{props.sommaire}</p>
             <ul className="liste_transparente">

@@ -4,7 +4,7 @@ import FormulaireContact from "./FormulaireContact";
 
 const ModaleContact = () => {
   return (
-    <Modale htmlIdModale="modaleMeContacter" header="Formulaire de contact" grandeur="md">
+    <Modale htmlIdModale="modaleMeContacter" header="Formulaire de contact" grandeur="lg">
         <FormulaireContact />
     </Modale>
   );

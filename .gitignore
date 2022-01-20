@@ -7,6 +7,7 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+donneesprivees.js
 # Firebase cache
 .firebase/
 
@@ -64,3 +65,5 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+src/assets/scripts/firebase.js
