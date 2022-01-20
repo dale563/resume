@@ -7,19 +7,19 @@ GitHubActivity.feed({
 });
 
 const firebaseConfig = {
-      apiKey: "AIzaSyChERzhVdnYOcP32coEpXk3snu5ROw--wE",
-      authDomain: "dalelimoges-iw.firebaseapp.com",
-      databaseURL: "https://dalelimoges-iw-default-rtdb.firebaseio.com",
-      projectId: "dalelimoges-iw",
-      storageBucket: "dalelimoges-iw.appspot.com",
-      messagingSenderId: "885980907698",
-      appId: "1:885980907698:web:bde463e009944b649da1ab",
-      measurementId: "G-HVCXJ5YW0B",
-    }
+  apiKey: "AIzaSyChERzhVdnYOcP32coEpXk3snu5ROw--wE",
+  authDomain: "dalelimoges-iw.firebaseapp.com",
+  databaseURL: "https://dalelimoges-iw-default-rtdb.firebaseio.com",
+  projectId: "dalelimoges-iw",
+  storageBucket: "dalelimoges-iw.appspot.com",
+  messagingSenderId: "885980907698",
+  appId: "1:885980907698:web:bde463e009944b649da1ab",
+  measurementId: "G-HVCXJ5YW0B",
+};
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-
+// const analytics = getAnalytics(app);
 
 let contactInfo = firebase.database().ref("dliw-formulaire-contact");
 
@@ -42,6 +42,7 @@ const submitForm = () => {
   let sujet = document.getElementById("contact-sujet").value;
   let message = document.getElementById("contact-message").value;
 
+  console.log(nom, courriel, telephone, sujet, message);
   saveContactInfo(nom, courriel, telephone, sujet, message);
   reinitialiserFormulaire();
   afficherConfirmation();
