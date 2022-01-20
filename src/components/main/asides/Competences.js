@@ -5,12 +5,9 @@ const Competences = () => {
   return (
     <Section
       className="skills aside"
-      classNameHeader="sr-only"
-      heading="Compétences"
+      // classNameHeader="sr-only"
+      heading="Compétences techniques"
     >
-      <p className="intro">
-      Mon intérêt est marqué pour le développement front-end. J'apprécie particulièrement le Sass, Bootstrap, React, Git et Webpack.
-      </p>
 
       <div className="skillset">
       {resume.competences.map((competence) => (

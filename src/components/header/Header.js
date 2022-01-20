@@ -3,6 +3,7 @@ import DarkModeSwitch from "./DarkModeSwitch";
 import InfoProfile from "./InfoProfile";
 import ModaleContact from "./ModaleContact";
 import BoutonContact from "../UI/BoutonContact";
+import ModaleConfirmation from './ModaleConfirmation';
 
 const Header = () => {
     return (
@@ -15,6 +16,7 @@ const Header = () => {
                         <div className="col-12 col-md-auto">
                             <BoutonContact/>
                             <ModaleContact/>
+                            <ModaleConfirmation/>
                             <DarkModeSwitch/>
                             
                         </div>

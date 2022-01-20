@@ -1,6 +1,7 @@
 const Modale = (props) => {
   const ariaLabel = props.htmlIdModale + "_label";
   const classesModale = `modal-dialog modal-${props.grandeur}`;
+
   return (
     <div
       className="modal fade modale_projet"
@@ -15,18 +16,16 @@ const Modale = (props) => {
             <h5 className="modal-title title" id={ariaLabel}>
               {props.header}
             </h5>
-            <button
+              <button
               type="button"
-              className="btn"
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Fermer"
             >
-              <span aria-hidden="true">
-                <i className="fas fa-times times_modale"></i>
-              </span>
             </button>
           </div>
-          <div className="modal-body">{props.children}</div>
+          <div className="modal-body">{props.children}
+          </div>
 
           <div className="modal-footer">
             <input
@@ -44,7 +43,7 @@ const Modale = (props) => {
                   value="Réinitialiser"
                 />
                 <input
-                id="btn_envoyer_formulaire_contact"
+                  id="btn_envoyer_formulaire_contact"
                   className="btn btn-success"
                   type="submit"
                   form="formulaireContact"

@@ -4,6 +4,7 @@ import lettreMicrofix from "./assets/documents/LIMOGES-Dale_Lettre-experience-et
 import cv from "./assets/documents/LIMOGES-Dale_CV.pdf";
 import releveNoteMontmorency from "./assets/documents/LIMOGES-Dale_Releve-Note_Montmorency.pdf";
 import mesIcones from "./mesIcones";
+import bgDark from "./assets/images/bgdark_1920.jpg";
 
 // Images et documents en lien avec Apropos ************************************************************************ 
 // Images et documents en lien avec Apropos ************************************************************************ 
@@ -82,26 +83,19 @@ const dlndSiteWeb = "https://dl-nd.com";
 
 const resume = {
   apropos: {
+
     paragraphes: [
       {
         id: 1,
-        texte: `J’accorde beaucoup d’importance à l’efficacité et à l’optimisation. Mon super pouvoir est la résolution de problème par la vision d’ensemble (systémique).`,
+        texte: `Je recherche un stage en intégration web ou en programmation front-end avec possibilité de poursuivre en emploi à temps plein (35h/semaine). J'aspire à un environnement professionnel, bienveillant et convivial. Finalement, je me débrouille bien dans la gestion d’une équipe ou d’un projet.`,
       },
       {
         id: 2,
-        texte: `Je suis passionné de technologies et de médecines naturelles et j’aspire à équilibrer les deux dans ma vie.`,
+        texte: `J’accorde beaucoup d’importance à l’efficacité et à l’optimisation. Mon super pouvoir est la résolution de problème par la vision d’ensemble (systémique).  Mon intérêt est marqué pour le développement front-end. J'apprécie particulièrement le Sass, Bootstrap, React, Git et Webpack.`,
       },
       {
         id: 3,
-        texte: `Je recherche un stage en intégration web ou en programmation front-end avec possibilité de poursuivre en emploi à temps plein (35h/semaine). Je suis ouvert à d'autres propositions qui permettraient une place pour ma pratique en naturopathie (une journée par semaine ou l'équivalent suffit).`,
-      },
-      {
-        id: 4,
-        texte: `Finalement, je me débrouille bien dans la gestion d’une équipe ou d’un projet et j’aspire à un environnement professionnel, bienveillant et convivial.`,
-      },
-      {
-        id: 5,
-        texte: `Chacun des projets démontrent différentes compétences : ma capacité à gérer un projet, mon autonomie, ma vision globale, mes compétences technique en programmation ainsi que ma “capacité exceptionnelle à apprendre”`,
+        texte: `Chacun des projets, dans la section suivante, démontre différentes compétences : ma capacité à gérer un projet, mon autonomie, ma vision globale, mes compétences technique en programmation ainsi que ma “capacité exceptionnelle à apprendre”`,
         sourceCitation:lettreCGL,
       },
     ],
@@ -112,12 +106,6 @@ const resume = {
         alt: "Photo de moi travaillant devant 3 écrans",
       figCaption: "Mon bureau de travail à l'étage.",
       },
-      {
-        id: 2,
-        src: AproposThumbnail02,
-        alt: "Photo de moi travaillant devant 2 écrans et une tablette de dessin",
-        figCaption:"Mon bureau de travail au rez-de-chaussé.",
-      },
     ],
     liens: [
       {
@@ -126,12 +114,6 @@ const resume = {
         href:cv,
         icone:mesIcones.pdf,
       },
-      // {
-      //   id: 2,
-      //   nom: "Lettre présentation générique",
-      //   src:cv,
-      //   icone:mesIcones.pdf,
-      // },
       {
         id: 3,
         text: "Lettre de référence d'Équipe Microfix",
@@ -279,14 +261,6 @@ const resume = {
                 texte: `Je suis fier de dire que nous avons respecté nos échéances et très bien gérer nos efforts et le résultat final correspond à nos objectifs.`,
               },
             ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
-            ],
           },
           {
             id: 4,
@@ -339,14 +313,6 @@ const resume = {
                 id: 3,
                 texte: `Je peux vous montrez le site en construction sur demande.`,
               },
-            ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
             ],
           },
         ],
@@ -483,34 +449,6 @@ const resume = {
               },
             ],
           },
-          // {
-          //   id: 5,
-          //   titre: "Conclusion",
-          //   imgSrc: DlndModale05,
-          //   imgAlt: "Vision globale de la page d'accueil avec le menu a gauche. Image d'un homme qui cour avec une citation a droite. Présentation des services et des questions fréquentes en dessous. Et finalement des témoignages",
-          //   paragraphes: [
-          //     {
-          //       id: 1,
-          //       texte: `J’ai compris l’importance des différentes étapes et comment l’ensemble interagit.`,
-          //     },
-          //     {
-          //       id: 2,
-          //       texte: `Cela me permet de mieux apprécier là valeur du design et des règles d’ergonomie et d’être en mesure de les évaluer objectivement.`,
-          //     },
-          //     {
-          //       id: 3,
-          //       texte: `J’ai aussi appris, que le design me demande beaucoup plus d’effort et pour des résultats moindres que les autres éléments couverts dans la formation.`,
-          //     },
-          //   ],
-          //   liens: [
-          //     // {
-          //     //   id: 1,
-          //     //   text: "test",
-          //     //   href: "https://lerempart.org",
-          //     //   icone: mesIcones.lienExt,
-          //     // },
-          //   ],
-          // },
         ],
       },
     },
@@ -678,14 +616,6 @@ const resume = {
                 id: 3,
                 texte: `Les graphiques de la présentation laisse a désiré mais permettent bien de constater que les deux pages n’ont pas les même chunks. Aussi vous pouvez voir le projet sur GitHub.`,
               },
-            ],
-            liens: [
-              // {
-              //   id: 1,
-              //   text: "test",
-              //   href: "https://lerempart.org",
-              //   icone: mesIcones.lienExt,
-              // },
             ],
           },
         ],

@@ -26,8 +26,8 @@ $background: #DAE3E7;
 $heart: #fb866a;
 
 $dm-background: #17191c;
-$dm-text-color: rgba(256, 256, 256, 0.9);
-$dm-text-color-secondary: rgba(256, 256, 256, 0.7);
+$dm-text-color: rgba(256, 256, 256, 0.95);
+$dm-text-color-secondary: rgba(256, 256, 256, 0.85);
 
 
 //*************************** Theme Styles ****************************/
@@ -36,4 +36,4 @@ $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 @import "base";
 @import "dark-mode";
 @import "responsive";
-@use "formulaire";
+// @import "formulaire";

@@ -1,14 +1,15 @@
 import React from 'react';
+
 const FormulaireContact = () => {
-  return (
+   return (
     <form
       id="formulaireContact"
-      className="row needs-validation"
+      className="needs-validation"
       data-toggle="validator"
       role="form"
       noValidate
     >
-      <div className="row">
+      <div className="row w-100 m-auto p-auto">
         <div className="col-lg-6 mb-3">
           <label  htmlFor="contact-nom">
             Nom*
@@ -55,7 +56,6 @@ const FormulaireContact = () => {
           </div>
           <div className="valid-feedback">Merci !</div>
         </div>
-
         <div className="col-12 mb-3">
           <label  htmlFor="contact-sujet">
             Sujet
@@ -85,9 +85,12 @@ const FormulaireContact = () => {
           <div className="invalid-feedback">Veuillez écrire votre message.</div>
           <div className="valid-feedback">Merci !</div>
         </div>
-        <div>
+        <div className="mb-3">
           <small>* Champs obligatoires</small>
         </div>
+        <div className="alert col-12 w-100 p-3 mb-0 bg-success text-light font-weight-bold text-center d-none" id="confirmation_contact" role="alert">
+        <span>Merci <i className="fas fa-smile"></i></span>.{" "} Votre message à bien été envoyé. <br/>Appuyer sur retour pour fermer la fenêtre.
+      </div>
       </div>
     </form>
   );

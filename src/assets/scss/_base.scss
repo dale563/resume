@@ -1,10 +1,16 @@
 body {
     font-family: 'Lato', arial, sans-serif;   
     color: $text-color;
-    background: $background;
+    background: rgb(226, 226, 226);
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url(../images/bglight2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -109,7 +115,9 @@ padding:0;
 .header {
     padding: 30px 0;
     background: $smoky-white;
+    // background: #f5f5f5b4;
     border-top: 10px solid $color;
+    // border-top: 10px solid #778492a4;
     .btn {
         font-weight: bold;
     }
@@ -153,6 +161,10 @@ padding:0;
             }
         }
     }
+    // #merci {
+    //     font-size: 1.2rem;
+    //     font-weight: bold;
+    // }
 }
 
 /* ======= Sections======= */
@@ -474,6 +486,7 @@ padding:0;
             border-radius: 50%;
             width: 7px;
             height: 7px;
+            filter: invert(01) grayscale(100%) brightness(200%);
         }
     }
     .item {
@@ -630,7 +643,13 @@ padding:0;
     }
 }
 
-
+.tech_moyen {
+    font-size: 1.3rem;
+}
+.tech_grand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /* ======= Footer ======= */
 

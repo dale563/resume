@@ -1,6 +1,6 @@
 .dark-mode-switch {
   margin-bottom: 1rem;
-  .form-switch {
+  .-switch {
     display: flex;
   }
   label {
@@ -12,7 +12,6 @@
     border-radius: 1em;
     border-color: $background;
   }
-
   .form-check-input:checked {
     background-color: $btn-color;
     border-color: $btn-color;
@@ -24,19 +23,63 @@
 }
 
 body[data-theme="dark"] {
-  background: $dm-background;
+  // background: $dm-background;
+  
+    font-family: 'Lato', arial, sans-serif;   
+    color: $text-color;
+   
+    background: rgb(60, 58, 32);
+    // background: rgb(109, 108, 107);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(../images/bgdark_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+  #formulaireContact {
+    color: $dm-text-color;
+    label {
+      margin-left: 0.3rem;
+    }
+    input,
+    textarea {
+      background-color: black;
+      border: black;
+      color: white;
+      margin-top: 0.2rem;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0) inset !important;
+      -webkit-text-fill-color: rgb(255, 255, 255) !important;
+    }
+  }
+
+  .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  .carousel-indicators>button {
+    filter: invert(0) grayscale(100%) brightness(200%);
+  }
 
   .modal-content {
-    background: $dm-background;
-	
-    h5.title, .times_modale {
+      background: lighten($dm-background, 6%);
+
+    h5.title, h6,
+    .times_modale {
       color: $dm-text-color;
     }
-	.close {
-		background: transparent;
-	  	font-size: 18px;
-		padding:0;
-	}
+    .close {
+      background: transparent;
+      font-size: 18px;
+      padding: 0;
+    }
   }
 
   a:hover {
@@ -48,15 +91,15 @@ body[data-theme="dark"] {
   }
 
   .dark-mode-switch {
-    .form-check-input:focus {
+    .-check-input:focus {
       border-color: $btn-color;
     }
   }
 
   .header {
-    background: lighten($dm-background, 3%);
+    background: lighten($dm-background, 6%);
     color: $dm-text-color;
-    border-top-color: lighten($dm-background, 3%);
+    border-top-color: lighten($dm-background, 6%);
   }
 
   .header .profile-content .name {
@@ -66,14 +109,14 @@ body[data-theme="dark"] {
     color: $dm-text-color-secondary;
   }
   .header .profile-content .social a {
-    background: lighten($dm-background, 10%);
-    color: darken($dm-text-color-secondary, 10%);
+    background: lighten($dm-background, 20%);
+    color: darken($dm-text-color-secondary, 20%);
     &:hover {
       color: $dm-text-color;
     }
   }
   .section .section-inner {
-    background: lighten($dm-background, 3%);
+    background: lighten($dm-background, 6%);
     color: $dm-text-color-secondary;
   }
 
