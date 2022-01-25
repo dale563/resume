@@ -1,6 +1,7 @@
 import Carousel1Bouton from "./Carousel1Bouton";
 
 const Carousel1 = (props) => {
+  const nombreItems = props.items.length;
   return (
     <div
       id={props.carouselId}
@@ -9,7 +10,7 @@ const Carousel1 = (props) => {
     >
       <div className="carousel-indicators">
         {props.items.map((item) => (
-          <Carousel1Bouton key={item.id} dataBsTarget={props.dataBsTarget} />
+          <Carousel1Bouton key={item.id} dataBsTarget={props.dataBsTarget} nombreItems={nombreItems}/>
         ))}
       </div>
       <div className="carousel-inner">

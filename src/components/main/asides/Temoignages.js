@@ -7,7 +7,7 @@ import Carousel1Item from "../../UI/Carousel1Item";
 import Carousel1ItemEn from "../../UI/Carousel1ItemEn";
 
 const temoignages = resume.fr.temoignages; 
-const dataBsTarget = "#carouselTemoignages";
+const dataBsTarget = "#carouselTemoignagesFr";
 const temoignagesEn = resume.en.temoignages; 
 const dataBsTargetEn = "#carouselTemoignagesEn";
 
@@ -16,7 +16,7 @@ const Temoignages = (props) => {
     <>
     <Section className= "traduisible fr afficher testimonials aside" heading="Témoignages">
       <Carousel1
-        carouselId="carouselTemoignages"
+        carouselId="carouselTemoignagesFr"
         dataBsTarget={dataBsTarget}
         items={resume.fr.temoignages}
       >
