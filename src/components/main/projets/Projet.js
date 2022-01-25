@@ -16,6 +16,9 @@ const Projet = (props) => {
           hrefFormulaireDon={props.hrefFormulaireDon}
           modale={props.modale}
           liens={props.liens}
+          vedetteCta={props.vedetteCta}
+          vedetteTexte={props.vedetteTexte}
+          vedetteTexteRuban={props.vedetteTexteRuban}
         />
       )}
 

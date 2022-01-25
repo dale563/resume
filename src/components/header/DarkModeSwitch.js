@@ -1,4 +1,5 @@
 import React from "react";
+import NavLangues from "./NavLangues";
 
 const DarkModeSwitch = () => {
   return (

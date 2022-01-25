@@ -23,31 +23,18 @@ const Main = () => {
           <APropos />
           <Projets />
           <Accomplissements />
-          <Experiences
-            heading="Expérience de travail"
-            classesAjouteSection="experience"
-          />
+          <Experiences />
           <GitHub />
         </div>
-
         <aside className="secondary col-lg-4 col-12">
           <Infos />
           <Temoignages />
-          <TechnologiesUtilisees  heading="Technologies utilisées" />
+          <TechnologiesUtilisees />
           <Competences />
           <Qualites />
-
-          <Educations
-            heading="Éducation"
-            classesAjouteSection="education aside"
-          />
-          <Langues heading="Langues" classesAjouteSection="languages aside" />
-
-          <Credits
-            heading="Crédits"
-            classesAjouteSection="credits aside"
-            // classNameHeader="sr-only"
-          />
+          <Educations />
+          <Langues />
+          <Credits />
         </aside>
       </div>
     </main>

@@ -17,7 +17,7 @@ const ProjetVedette = (props) => {
           </a>
 
           <div className="ribbon">
-            <div className="text">Vedette</div>
+            <div className="text">{props.vedetteTexteRuban}</div>
           </div>
         </div>
 
@@ -60,15 +60,14 @@ const ProjetVedette = (props) => {
         </div>
         <div className="col-md-7 d-flex flex-column">
           <p className="pb-0 mb-0">
-            Avec l’aide de la plateforme de dons Symplik mise, vous pouvez
-            soutenir les femmes en difficulté et à risque d’itinérance :
+            {props.vedetteTexte}
           </p>
           <a
             href={props.hrefFormulaireDon}
             target="_blank"
             className="btn-don-rempart md-align-self-end"
           >
-            Faire un don
+            {props.vedetteCta}
           </a>
         </div>
         <hr />

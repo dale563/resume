@@ -2,18 +2,20 @@ import Section from "../../UI/Section";
 import Competence from "./Competence";
 import resume from "../../../donnees";
 const Qualites = () => {
+  const classes = "skills aside";
+  const classesHeader ="sr-only";
+  const classesEn = "en cacher " + classes;
+  const classesFr = "fr afficher " + classes;
   return (
+    <>
     <Section
-      className="skills aside"
-      // classNameHeader="sr-only"
+    className={classesFr}
+      // classNameHeader={classesHeader}
       heading="Qualités"
     >
-      {/* <p className="intro">
-      J'aime bien aimé gérer des projets. Je suis aussi habituer à du travail de bout en bout.
-      </p> */}
 
       <div className="skillset">
-      {resume.qualites.map((competence) => (
+      {resume.fr.qualites.map((competence) => (
           <Competence
             key={competence.id}
             nom={competence.nom}
@@ -24,6 +26,25 @@ const Qualites = () => {
         ))}
       </div>
     </Section>
+    <Section
+    className={classesEn}
+      // classNameHeader={classesHeader}
+      heading="Soft skills"
+    >
+
+      <div className="skillset">
+      {resume.fr.qualites.map((competence) => (
+          <Competence
+            key={competence.id}
+            nom={competence.nom}
+            niveau={competence.niveau}
+            tooltip={competence.tooltip}
+            pourcentage={competence.pourcentage}
+          />
+        ))}
+      </div>
+    </Section>
+    </>
   );
 };
 

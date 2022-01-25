@@ -15,6 +15,7 @@ import style5 from 'octicons/build/build.css';
 
   /* Github Calendar - https://github.com/dale563/github-calendar */
   new GitHubCalendar("#github-graph", "dale563", { responsive: true });
+  new GitHubCalendar("#github-graph-en", "dale563", { responsive: true });
 
 
   
