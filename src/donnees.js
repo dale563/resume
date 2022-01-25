@@ -1690,14 +1690,14 @@ const resume = {
     educations: [
       {
         id: 1,
-        nomFormation: "AEC - Production de médias interactifs",
+        nomFormation: "AEC - Interactive media production",
         lieuFormation: "Cégep Limoilou",
         anneesFormation: "2020-2022",
         documentSrc: "",
       },
       {
         id: 2,
-        nomFormation: "DEP - Soutien informatique",
+        nomFormation: "DEP - Information technology support",
         lieuFormation: "School of Information, Commerce and Administration (EMICA)",
         anneesFormation: "2012-2014",
         documentSrc: "",

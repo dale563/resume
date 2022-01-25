@@ -2,8 +2,8 @@ import React from "react";
 import Section from "../../UI/Section";
 const Credits = (props) => {
   const classes = "credits aside";
-  const classesEn = "en cacher " + classes;
-  const classesFr = "fr afficher " + classes;
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
   const classesHeader ="sr-only";
   // 
   return (
@@ -53,6 +53,11 @@ const Credits = (props) => {
         <li>
           <a href="https://webpack.js.org/" target="_blank">
             <i className="fas fa-external-link-alt"></i>Webpack
+          </a>
+        </li>
+        <li>
+          <a href="https://www.deepl.com/translator">
+            <i className="fas fa-external-link-alt"></i>Deep L
           </a>
         </li>
         <li>

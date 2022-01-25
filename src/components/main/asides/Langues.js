@@ -3,8 +3,8 @@ import Langue from "./Langue";
 import resume from '../../../donnees';
 const Langues = (props) => {
   const classes = "languages aside";
-  const classesEn = "en cacher " + classes;
-  const classesFr = "fr afficher " + classes;
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
   return (
     <>
     <Section className={classesFr} heading="Langues">

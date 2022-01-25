@@ -29,13 +29,13 @@ const Modale = (props) => {
 
           <div className="modal-footer">
             <input
-              className="fr afficher btn btn-secondary"
+              className= "traduisible fr afficher btn btn-secondary"
               data-bs-dismiss="modal"
               type="reset"
               value="Retour"
             />
             <input
-              className="en cacher btn btn-secondary"
+              className= "traduisible en cacher btn btn-secondary"
               data-bs-dismiss="modal"
               type="reset"
               value="Close"
@@ -44,26 +44,26 @@ const Modale = (props) => {
               <>
                 <input
                   id="btn_reinitialiser"
-                  className="fr afficher btn btn-warning"
+                  className= "traduisible fr afficher btn btn-warning"
                   type="button"
                   value="Réinitialiser"
                 />
                 <input
                   id="btn_envoyer_formulaire_contact"
-                  className="fr afficher btn btn-success"
+                  className= "traduisible fr afficher btn btn-success"
                   type="submit"
                   form="formulaireContact"
                   value="Envoyer"
                 />
                 <input
                   id="btn_reinitialiser"
-                  className="en cacher btn btn-warning"
+                  className= "traduisible en cacher btn btn-warning"
                   type="button"
                   value="Reinitialize"
                 />
                 <input
                   id="btn_envoyer_formulaire_contact"
-                  className="en cacher btn btn-success"
+                  className= "traduisible en cacher btn btn-success"
                   type="submit"
                   form="formulaireContact"
                   value="Send"

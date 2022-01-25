@@ -4,7 +4,7 @@ const Infos = () => {
   return (
     <>
     <Section
-      className="fr afficher info aside"
+      className= "traduisible fr afficher info aside"
       classNameHeader="sr-only"
       heading="Information de base"
     >
@@ -33,7 +33,7 @@ const Infos = () => {
       </ul>
     </Section>
     <Section
-      className="en cacher info aside"
+      className= "traduisible en cacher info aside"
       classNameHeader="sr-only"
       heading="Basic Information"
     >

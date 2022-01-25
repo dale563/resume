@@ -4,8 +4,8 @@ import resume from "../../donnees";
 
 const Projets = () => {
   const classes = "latest";
-  const classesEn = "en cacher " + classes;
-  const classesFr = "fr afficher " + classes;
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
 
   return (
     <>

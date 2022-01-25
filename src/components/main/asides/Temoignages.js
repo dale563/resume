@@ -14,7 +14,7 @@ const dataBsTargetEn = "#carouselTemoignagesEn";
 const Temoignages = (props) => {
   return (
     <>
-    <Section className="fr afficher testimonials aside" heading="Témoignages">
+    <Section className= "traduisible fr afficher testimonials aside" heading="Témoignages">
       <Carousel1
         carouselId="carouselTemoignages"
         dataBsTarget={dataBsTarget}
@@ -33,7 +33,7 @@ const Temoignages = (props) => {
         ))}
       </Carousel1>
     </Section>
-    <Section className="en cacher testimonials aside" heading="Testimonials">
+    <Section className= "traduisible en cacher testimonials aside" heading="Testimonials">
       <Carousel1
         carouselId="carouselTemoignagesEn"
         dataBsTarget={dataBsTargetEn}

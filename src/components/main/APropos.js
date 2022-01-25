@@ -5,8 +5,8 @@ import Lien from "../UI/Lien";
 
 const APropos = () => {
   const classes = "about";
-  const classesEn = "en cacher " + classes;
-  const classesFr = "fr afficher " + classes;
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
   
   return (
     <>

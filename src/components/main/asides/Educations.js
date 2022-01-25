@@ -3,8 +3,8 @@ import Education from "./Education";
 import resume from "../../../donnees";
 const Educations = (props) => {
   const classes = "education aside";
-  const classesEn = "en cacher " + classes;
-  const classesFr = "fr afficher " + classes;
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
 
   return (
     <>

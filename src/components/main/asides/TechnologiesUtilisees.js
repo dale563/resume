@@ -1,8 +1,8 @@
 import Section from "../../UI/Section";
 function TechnologiesUtilisees(props) {
   const classes = "";
-  const classesEn = "en cacher " + classes;
-  const classesFr = "fr afficher " + classes;
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
   return (
     <>
     <Section className={classesFr} heading="Technologies utilisées">

@@ -94,15 +94,16 @@ const afficherConfirmation = () => {
 // Fonction pour changer de langue anglais/français
 (function () {
 const boutonsLangues = document.getElementsByClassName("btn-langues");
-const sectionsSite = document.getElementsByTagName('section');
-console.log(sectionsSite);
+// const sectionsSite = document.getElementsByTagName('section');
+const elementsATraduire = document.getElementsByClassName('traduisible');
+console.log(elementsATraduire);
 let langueFr = true;
 
 const changerLangue = () => {
     console.log('bouton fonctionne');
     langueFr = !langueFr;
-    for (let i = 0; i < sectionsSite.length; i++) {
-      const element = sectionsSite[i];
+    for (let i = 0; i < elementsATraduire.length; i++) {
+      const element = elementsATraduire[i];
       element.classList.toggle("cacher");
       element.classList.toggle("afficher");
     };
