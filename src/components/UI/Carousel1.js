@@ -1,4 +1,3 @@
-// import { Carousel } from 'bootstrap';
 import Carousel1Bouton from "./Carousel1Bouton";
 
 const Carousel1 = (props) => {

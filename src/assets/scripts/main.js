@@ -5,6 +5,11 @@ GitHubActivity.feed({
   selector: "#ghfeed",
   limit: 20, // optional
 });
+GitHubActivity.feed({
+  username: "dale563",
+  selector: "#ghfeed-en",
+  limit: 20, // optional
+});
 
 const firebaseConfig = {
   apiKey: "AIzaSyChERzhVdnYOcP32coEpXk3snu5ROw--wE",
@@ -48,7 +53,6 @@ const submitForm = () => {
   afficherConfirmation();
 };
 
-
 const formulaireContact = document.getElementById("formulaireContact");
 const boutonReinitialier = document.getElementById("btn_reinitialiser");
 
@@ -58,12 +62,11 @@ const reinitialiserFormulaire = () => {
 };
 
 const afficherConfirmation = () => {
-  
-  const confirmation = document.getElementById('confirmation_contact');
-  confirmation.classList.toggle('d-none');
+  const confirmation = document.getElementById("confirmation_contact");
+  confirmation.classList.toggle("d-none");
 
   setTimeout(function () {
-    confirmation.classList.toggle('d-none');
+    confirmation.classList.toggle("d-none");
   }, 5000);
 };
 
@@ -74,14 +77,13 @@ const afficherConfirmation = () => {
     form.addEventListener(
       "submit",
       function (event) {
-          event.preventDefault();
+        event.preventDefault();
         if (!form.checkValidity()) {
           event.stopPropagation();
           form.classList.add("was-validated");
         } else {
           form.classList.add("was-validated");
           submitForm();
-          
         }
       },
       false
@@ -89,5 +91,33 @@ const afficherConfirmation = () => {
   });
 })();
 
+// Fonction pour changer de langue anglais/français
+(function () {
+const boutonsLangues = document.getElementsByClassName("btn-langues");
+// const sectionsSite = document.getElementsByTagName('section');
+const elementsATraduire = document.getElementsByClassName('traduisible');
+console.log(elementsATraduire);
+let langueFr = true;
+
+const changerLangue = () => {
+    console.log('bouton fonctionne');
+    langueFr = !langueFr;
+    for (let i = 0; i < elementsATraduire.length; i++) {
+      const element = elementsATraduire[i];
+      element.classList.toggle("cacher");
+      element.classList.toggle("afficher");
+    };
+    for (let i = 0; i < boutonsLangues.length; i++) {
+      const element = boutonsLangues[i];
+      element.classList.toggle("disabled");
+  }
+};
+
+for (let i = 0; i < boutonsLangues.length; i++) {
+  const element = boutonsLangues[i];
+  element.addEventListener("click", changerLangue);
+}
+})();
+// Fin de la fonction pour changer de langue anglais/français
 
 boutonReinitialier.addEventListener("click", reinitialiserFormulaire);

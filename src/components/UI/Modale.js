@@ -29,25 +29,44 @@ const Modale = (props) => {
 
           <div className="modal-footer">
             <input
-              className="btn btn-secondary"
+              className= "traduisible fr afficher btn btn-secondary"
               data-bs-dismiss="modal"
               type="reset"
               value="Retour"
+            />
+            <input
+              className= "traduisible en cacher btn btn-secondary"
+              data-bs-dismiss="modal"
+              type="reset"
+              value="Close"
             />
             {props.htmlIdModale === "modaleMeContacter" && (
               <>
                 <input
                   id="btn_reinitialiser"
-                  className="btn btn-warning"
+                  className= "traduisible fr afficher btn btn-warning"
                   type="button"
                   value="Réinitialiser"
                 />
                 <input
                   id="btn_envoyer_formulaire_contact"
-                  className="btn btn-success"
+                  className= "traduisible fr afficher btn btn-success"
                   type="submit"
                   form="formulaireContact"
                   value="Envoyer"
+                />
+                <input
+                  id="btn_reinitialiser"
+                  className= "traduisible en cacher btn btn-warning"
+                  type="button"
+                  value="Reinitialize"
+                />
+                <input
+                  id="btn_envoyer_formulaire_contact"
+                  className= "traduisible en cacher btn btn-success"
+                  type="submit"
+                  form="formulaireContact"
+                  value="Send"
                 />
               </>
             )}

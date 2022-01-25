@@ -2,10 +2,14 @@ import Section from "../../UI/Section";
 import Education from "./Education";
 import resume from "../../../donnees";
 const Educations = (props) => {
+  const classes = "education aside";
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
 
   return (
-    <Section className={props.classesAjouteSection} heading={props.heading}>
-      {resume.educations.map((education) => (
+    <>
+      <Section className={classesFr} heading="Éducation">
+        {resume.fr.educations.map((education) => (
           <Education
             key={education.id}
             nomFormation={education.nomFormation}
@@ -14,7 +18,18 @@ const Educations = (props) => {
             documentsUri={education.documentsUri}
           />
         ))}
-    </Section>
+      </Section>
+      <Section className={classesEn} heading="Education">
+        {resume.en.educations.map((education) => (
+          <Education
+            key={education.id}
+            nomFormation={education.nomFormation}
+            lieuFormation={education.lieuFormation}
+            anneesFormation={education.anneesFormation}
+          />
+        ))}
+      </Section>
+    </>
   );
 };
 

@@ -13,6 +13,14 @@ body {
     background-blend-mode: screen;
 }
 
+.cacher {
+    display: none;
+}
+
+.afficher {
+    display: block;
+}
+
 h1, h2, h3, h4, h5, h6  {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -161,10 +169,16 @@ padding:0;
             }
         }
     }
-    // #merci {
-    //     font-size: 1.2rem;
-    //     font-weight: bold;
-    // }
+
+    #navigation-langues{
+        .btn {
+            padding: 0.1rem;
+        }
+        img {
+            width: 1.5rem;
+            height: 1rem;
+        }
+    }
 }
 
 /* ======= Sections======= */

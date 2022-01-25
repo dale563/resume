@@ -2,15 +2,19 @@ import Section from "../../UI/Section";
 import Competence from "./Competence";
 import resume from "../../../donnees";
 const Competences = () => {
+  const classes = "skills aside";
+  const classesHeader ="sr-only";
+  const classesEn = "traduisible en cacher " + classes;
+  const classesFr = "traduisible fr afficher " + classes;
   return (
+    <>
     <Section
-      className="skills aside"
-      // classNameHeader="sr-only"
+      className={classesFr}
+      // classNameHeader={classesHeader}
       heading="Compétences techniques"
     >
-
       <div className="skillset">
-      {resume.competences.map((competence) => (
+      {resume.fr.competences.map((competence) => (
           <Competence
             key={competence.id}
             nom={competence.nom}
@@ -21,6 +25,23 @@ const Competences = () => {
         ))}
       </div>
     </Section>
+    <Section
+      className={classesEn}
+      // classNameHeader={classesHeader}
+      heading="Hard skills"
+    >
+      <div className="skillset">
+      {resume.en.competences.map((competence) => (
+          <Competence
+            key={competence.id}
+            nom={competence.nom}
+            niveau={competence.niveau}
+            tooltip={competence.tooltip}
+            pourcentage={competence.pourcentage}
+          />
+        ))}
+      </div>
+    </Section></>
   );
 };
 
