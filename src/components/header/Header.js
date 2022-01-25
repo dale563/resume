@@ -17,7 +17,6 @@ const Header = () => {
           <div className="col-12 col-md-auto">
             <BoutonContact />
             <ModaleContact />
-            <ModaleConfirmation />
             <div
               className="d-flex flex-column flex-md-row align-items-center justify-content-md-between"
               id="switch-et-langues"
