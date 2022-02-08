@@ -4,7 +4,7 @@ const BoutonContact = () => {
     <>
     <button
       type="button"
-      className= "traduisible fr afficher btn btn-cta-primary"
+      className= "traduisible fr afficher btn btn-cta-primary m-auto m-lg-0"
       data-bs-toggle="modal"
       data-bs-target="#modaleMeContacter"
     >

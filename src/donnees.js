@@ -460,7 +460,7 @@ const resume = {
         id: 3,
         titre: "Présentation de Webpack",
         sommaire:
-          "Dans le cadre du cour de Recherche et développement, j'ai appris à utiliser de Webpack et l'ai présenté groupe",
+          "Dans le cadre du cours de recherche et développement, j'ai appris à utiliser Webpack et l'ai présenté au groupe.",
         imgSrc: PresentationWebpackSommaire01,
         imgAlt:
           "Menu écrit Présentation puis Logo Webpack centré sur fond noir prenant tout l'espace disponible.",

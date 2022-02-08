@@ -12,7 +12,7 @@ const Infos = () => {
       <li>
           <i className="fas fa-link"></i>
           <span className="sr-only">Site web: </span>
-          <a href="https://dalelimoges-iw.web.app/">
+          <a target="_blank" href="https://dalelimoges-iw.web.app/">
             https://dalelimoges-iw.web.app/
           </a>
         </li>

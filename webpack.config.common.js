@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  
   entry: {
     index: path.resolve(__dirname, "src/index.js"),
     vendors: path.resolve(__dirname, "src/assets/scripts/vendors.js"),
@@ -17,7 +18,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebPackPlugin({
-      filename: "index.html",
+      // filename: "index.html",
       template: path.resolve(__dirname, "src/index.html"),
     }),
     new webpack.ProvidePlugin({

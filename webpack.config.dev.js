@@ -17,8 +17,6 @@ module.exports = merge(common, {
          })
     ],
 
-    devtool: 'inline-source-map',
-
     devServer: {
         open: true,
         hot: true,
